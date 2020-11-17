@@ -1,0 +1,1756 @@
+---
+title: "226305 Forschungsbericht Bundesgesundheitsministerium"
+subtitle: "Analyse der MitgliederInnen des Bundesgesundheitsministeriums der letzten vier Legislaturperioden"
+authors: "Julian Hammerstein (jh229), Janina Hofmann (jh231), Jasmin Maya (jm133), Samuel Müller (sm222), Verena Nagel (vn009), Nora Schwarz (ns136)"
+date: "17. November 2020"
+output: html_notebook
+
+---
+
+# Einleitung, Forschungsfrage und Motivation
+
+Anders als andere empirische Forschungsmethoden bedient sich die immer häufiger Anwendung findende Netzwerkforschung an Grundlagen der Soziologie und betrachtet das Beziehungsgefüge zwischen AkteurInnen. So ermöglicht diese Methode, Ursachen für verschiedenste soziale Strukturen zu finden und macht „Wirkungsweisen auf verschiedenen Ebenen der Forschung zugänglich” (Stegbauer & Häußling, 2010, S.13).
+
+In diesem Feld wird des Weiteren davon ausgegangen, dass Individuen sich durch soziale Netzwerke und entsprechende Interaktion einen Nutzen in Form von sozialem Kapital, wie beispielsweise Unterstützung, erhoffen (Hennig, 2010). Aus diesem Grund eignet sich die Netzwerkforschung auch in Bezug auf politische AkteurInnen, um deren soziale Netzwerke zu analysieren und mögliche kontroverse Verbindungen aufzudecken. Insbesondere in Zeiten der aktuellen Covid-19-Pandemie rücken PolitikerInnen aus dem Gesundheitsbereich in den Vordergrund öffentlicher Diskussionen und sind auf Ratschläge verschiedener Institutionen angewiesen.
+
+Mit „zunehmender Komplexität sozialer, politischer und wirtschaftlicher Probleme wird die Notwendigkeit für Politiker/innen immer deutlicher, im Rahmen des politischen Entscheidungsprozesses verschiedene Quellen des Expertenwissens zu nutzen” (Kopka et al., 2019, S. 255). Dementsprechend ist Lobbyismus auch längst im politischen System etabliert. Konkret versteht man darunter die „gezielte Einflussnahme auf öffentliche Stellen, die […] für einen Dritten ausgeübt wird, damit die Interessen des Dritten bei Entscheidungen der Rechtsetzung oder Verwaltung möglichst vollständig Niederschlag finden“ (Hoppe, 2009). 
+
+Doch nicht selten werden derartige Verbindungen kritisiert und die Stimmen für mehr Transparenz bei Lobbyarbeit mehren sich. So wurde auch Bundesgesundheitsminister Jens Spahn vorgeworfen, seine Verbindungen zur Gesundheitsindustrie nicht transparent genug zu halten (Reyher 2012; Rohrer, 2019). Mills appellierte bereits 1956 an die Öffentlichkeit, Eliten kritischer zu betrachten und deren Vorgaben zu hinterfragen, denn sonst würde der demokratische Charakter verloren gehen (Mills, 2000). Rechtlich fehlt es in Deutschland bisher an einheitlichen Definitionen für Lobbyismus und auch die Grenze zwischen Politikberatung und Lobbyismus bleibt ungewiss (Biskup und Schöll Mazurek, 2019). Aufgrund des fehlenden Lobbyregisters in Deutschland sind Einflussnahmen und Verflechtungen zwischen politischen AkteurInnen nicht in vollem Umfang sichtbar und sowohl JournalistInnen als auch BürgerInnen wird die demokratische Kontrolle erschwert.
+
+Deshalb ist unser Anliegen, durch die nachfolgende Netzwerkanalyse Transparenz im Politikbereich zu schaffen, sowie über Beziehungen und Abhängigkeiten zwischen Gesundheitssektor und Politik, soweit es uns der Datenzugang ermöglicht, aufzuklären. Wir halten es für wichtig, dass diese Verbindungen für alle sichtbar, verständlich und zugänglich sind, denn so kann die Bildung einer kritischen Öffentlichkeit unterstützt und Eliten kritischer hinterfragt werden, was wiederum zu einer Stärkung der Demokratie führt (Mills, 2000). Im Fokus der Forschung stehen die vergangenen und aktuellen Nebentätigkeiten, Berufe und Mitgliedschaften der Mitglieder des Bundesgesundheitsministeriums. Hierbei soll herausgefunden werden, ob die jeweiligen Tätigkeiten ebenfalls in der Gesundheits- oder gar Pharmabranche angesiedelt sind. Zudem interessiert uns, ob bestimmte Institutionen mit ihrer Häufigkeit an Verbindungen zu PolitikerInnen besonders herausstechen.
+
+Im Folgenden werden Unternehmen, Vereine, Stiftungen oder politische Institutionen zur Vereinfachung unter dem Begriff Organisation zusammengefasst.
+
+
+# 1. Forschungsstand
+
+##  1.1. Vorarbeiten und vergleichbare Studien
+
+Politikberatung gewinnt für die Entscheidungsfindung zunehmend an Bedeutung. Ein Grund hierfür ist vor allem die gestiegene Komplexität der Probleme mit der sich die Politik beschäftigt. Zu den bedeutendsten Bereichen im Lobbyismus in Deutschland gehören Finanzmärkte, Banken, Verkehr, Verteidigung, die Industriepolitik, die Energiepolitik und das Gesundheitswesen (Kopka et al., 2019).
+
+Lobbying setzt sich aus drei Bausteinen zusammen: der Informationsbeschaffung- und vermittlung, der Kontrolle des Regierungs- und legislativen Handelns sowie der politischen Beeinflussung. Da sich Ministerien und Parlamente aufgrund mangelnder Ressourcen Unterstützung von außen holen, haben Lobbygruppen, zu denen auch Verbände und Nichtregierungsorganisationen gehören, großen Einfluss auf den Politikbetrieb – positiv wie auch negativ (Strässer & Meerkamp, 2015). Interessenvertretung hat einen großen Einfluss auf das politische System und wird nicht ohne Grund als fünfte Gewalt bezeichnet (Leif & Speth, 2006).
+
+Insbesondere wegen des hohen Einflusses von Lobbyingaktivitäten im Gesundheitssektor untersuchen wir in unserer Netzwerkanalyse das Gesundheitswesen. Im Interesse unserer Forschung stehen die vergangenen und aktuellen Nebentätigkeiten, Berufe und Mitgliedschaften der MitgliederInnen des Bundesgesundheitsministeriums. Hierbei soll herausgefunden werden, ob die jeweiligen Tätigkeiten ebenfalls in der Gesundheits- oder gar Pharmabranche angesiedelt sind. Untersucht werden die letzten vier Legislaturperioden, also die 16. bis 19. Wahlperiode. Es handelt sich um den Zeitraum von 2005 bis 2021. Die verschiedenen Legislaturperioden werden untersucht, um diese miteinander vergleichen zu können.
+
+Im Bereich der Gesundheitspolitik gibt es sehr viele unterschiedliche Gruppen-  und Einzelinteressen. Wie erfolgreich die Möglichkeit der Einflussnahme auf die Politik ist, unterscheidet sich stark innerhalb von verschiedenen Interessenverbänden und ist dabei maßgeblich von den finanziellen Mitteln abhängig, die diese besitzen (Simon, 2015).
+Auch der Begriff Interessenverband ist nicht eindeutig definiert und umfasst daher viele Bereiche. Es kann sich hierbei beispielsweise um eine Organisation zum Schutz von Menschenrechten handeln oder auch um Verbände von Pharmaorganisationen (Kopka et al., 2019).
+
+In Deutschland gibt es nach wie vor kein verpflichtendes Lobbyregister. Daher liegen bisher nur in sehr geringem Maße empirische Forschungserkenntnisse über Lobbyingaktivitäten von Interessenverbänden vor (Kentrup et al., 2013).
+Einen Beitrag, um diese Forschungslücke zu schließen, haben Stefan Kentrup, Andreas Hoffjan und Maik Lachmann geleistet. Hierzu haben sie eine Studie durchgeführt, die Antworten auf die Frage, wie Unternehmen Lobbying betreiben, geben soll. Auch Ulrike Malmendier in Berkeley und Klaus Schmidt von der LMU München haben sich mit dem Thema Lobbyismus in einer experimentellen Studie auseinandergesetzt. Diese wurde 2012 in der NBER Working Paper Reihe veröffentlicht. In Ihrer Studie konnten sie nachweisen, dass es durch Zuwendungen von Unternehmen und Interessenverbänden zu besonders verzerrten Entscheidungen in der Politik kommt.
+
+##  1.2. Arbeitshypothesen
+
+Wir gehen von folgenden Arbeitshypothesen aus:
+a) Es gibt einige Verbindungen der AkteurInnen zum Gesundheitssektor.
+b) Es gibt einige Verbindungen der AkteurInnen in die Pharmaindustrie.
+c) Einzelne BundesgesundheitsministerInnen sind besonders eng mit dem Gesundheitssektor verbunden.
+d) Es gibt große Unterschiede bei der Anzahl der Verbindungen von einzelnen AkteurInnen zu Unternehmen.
+e) Die BundesgesundheitsministerInnen sind die Knoten mit den meisten Verbindungen.
+f) Bestimmte Unternehmen haben Verbindungen zu mehreren MitgliederInnen des Ministeriums.
+g) Es gibt erkennbare Unterschiede anhand der Parteizugehörigkeit.
+h) Der Bildungshintergrund der AkteurInnen liegt überwiegend im Gesundheitsbereich. 
+
+# 2. Datenerhebung
+
+## Systematik des Datenzugangs
+Durch öffentliche Quellen konnten wir an einige Informationen gelangen, die uns bei der Recherche weitergeholfen haben. Dazu zählen journalistische Presse- und Medienseiten, wie unter anderem spiegel.de, welt.de, focus.de und faz.net. Dort haben wir interessante Informationen über Veränderungen von politischen Positionen sowie Bei- oder Austritte aus Ausschüssen, Organisationen oder Vereinen der PolitikerInnen herausfinden können.
+ 
+## Internet-Quellen
+Bei der Datenerhebung durch Internet-Quellen haben wir viele verschiedene Webseiten genutzt. Zum einen die eigenen Websites der zu untersuchenden PolitikerInnen, auf denen wir nützliche Infos zu deren Lebenslauf sowie (Neben-)Tätigkeiten herausfiltern konnten. Zum anderen die Homepages von Parteien, Verbänden, Organisationen, Unternehmen und Universitäten, um etwa die Dauer einer Mitgliedschaft oder den Status einer Politikerin/eines Politikers zu prüfen. Zeitliche Angaben zu den Mitgliedschaften haben uns bei der Recherche sehr geholfen, waren aber leider nicht immer auf den Seiten angegeben. Soziale Medien haben wir für unsere Recherche nicht genutzt.
+ 
+## Datenbanken
+Unter anderem haben wir das Munzinger-Archiv als Quelle für unsere Daten verwendet. Auch die Datenbank web.archive.org hat uns immens weitergeholfen, da dort Daten aus der Vergangenheit systematisch archiviert werden. Bei abgeordnetenwatch.de haben wir nur bedingt nützliche Informationen gefunden, oft waren hier leider keine Nebentätigkeiten der PolitikerInnen hinterlegt. Bundestag.de hat uns wichtige Erkenntnisse zu beispielsweise Mitgliedschaften in Ausschüssen geliefert. Lobbypedia.de sowie lobbyradar.org waren sehr hilfreich, um die politischen Positionen, Mitgliedschaften und Verbindungen der zu untersuchenden AkteurInnen zu ermitteln.
+
+##  2.1. Zugang
+
+Unsere Hauptquellen waren vor allem lobbyradar.org, das Archiv des Bundestags bundestag.de/archiv sowie lobbypedia.de. Teilweise haben wir auch auf den Wikipedia-Seiten von PolitikerInnen und Organisationen nach Informationen recherchiert, da auf den Lobby-Recherche-Seiten teilweise einige Angaben gefehlt haben. Zu manchen PolitikerInnen gab es viel zu finden, zu anderen sehr wenig. Dies hat uns die Recherche erschwert und wir sind teilweise unweigerlich an einen Stillstand gelangt. Es gab viele Grenzen, an die wir bei der Recherche gestoßen sind, da wir auf einige Daten keinen Zugriff hatten. Insgesamt wurde deutlich, dass ein einheitliches Register für Lobbyaktivitäten fehlt.
+
+##  2.2. Codebuch
+
+Das Codebuch beschreibt die Variablen, Relationen sowie Gewichtungen unseres Netzwerks und ist ebenfalls auf Github hinterlegt. Durch das Codebuch kann die Analyse der Daten nachvollzogen werden.
+[Link zum Codebuch](https://github.com/Netzwerke-Pharma/Datensatz-gesamt/blob/main/Codebuch.md)
+
+```{r Initialisieren der Packages}
+library(igraph)
+library(igraphdata)
+```
+
+# 3. Analyse und Interpretation: Gesamtnetzwerk
+
+##  3.1. Einlesen des Datensatzes & Erstellung igraph-Objekt
+
+Die Edge- und Nodelisten werden über read.csv von Github geladen und mit dem Packet igraph zu einem Objekt zusammengeführt.
+```{r Einlesung der Daten - Netzwerkprojekt Gesamtnetzwerk}
+el <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+# Matrix erstellen
+edgematrix <-as.matrix(el)
+# Die Daten werden im Dataframe gespeichert
+bmg <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=F)
+bmg
+
+```
+Das Gesamtnetzwerk umfasst 257 Knoten mit 305 Beziehungen (siehe igraph-Objekt). Durch Mitgliedschaften in bestimmten Institutionen, Organisationen, Ausschüssen, Stiftungen oder Vereinen können reziproke Verbindungen entstehen, weshalb es sich um ein ungerichtetes und ungewichtetes Netzwerk handelt. Da wir sowohl Personen als auch Unternehmen, Organisationen und Stiftungen untersuchen, erheben wir ein Two-Mode Netzwerk.
+
+## 3.2. Plotten der Rohdaten
+
+In diesem Schritt wird das Gesamtnetzwerk geplottet, um die Größe des Netzwerks darzustellen und eine Übersicht aller Knoten und Verbindungen zu gewinnen.
+
+```{r Standardplot Gesamtnetzwerk, fig.height=9, fig.width=16}
+plot(bmg,
+  aps = 0,
+  main = "Gesamtnetzwerk",
+  vertex.size = 5,
+  vertex.label.dist = 1,
+  edge.arrow.size = .4
+  )
+```
+Erkennbar ist, dass im Mittelpunkt das Bundesgesundheitsministerium steht, über das alle MitgliederInnen miteinander verbunden sind.
+Das Netzwerk ist ein ungerichtetes Two-Mode-Netzwerk (type= Person und Organisation) und es gibt viele kleine Cluster. Das Netzwerk hat eine Komponente.
+
+## 3.3. Analyse der Netzwerkdaten
+
+### 3.3.1 Generelle Netzwerkmaße
+
+```{r Generelle Netzwermkaße Gesamtnetzwerk}
+# Parameter zu Beschreibung des Netzwerks
+
+## Besteht das Netzwerk aus Komponenten?
+is.connected(bmg)
+components(bmg)
+
+## Dichte des Netzwerks
+edge_density(bmg, loops=FALSE)
+
+## Mittlere Pfaddistanz
+mean_distance(bmg)
+## Pfaddistanzen (Distance)
+farthest_vertices(bmg)
+
+## Umfang des Netzwerks
+get_diameter(bmg)
+```
+Das Netzwerk besteht aus einer Komponente mit 257 AkteurInnen. 
+Im Gesamtnetzwerk sind nur 0,92 % der Beziehungen zwischen den Knoten realisiert, das heißt das Gesamtnetzwerk hat eine sehr geringe Dichte. Die AkteurInnen stehen also sehr selten untereinander in Beziehung. Die durchschnittliche Pfaddistanz, um von Knoten A nach Knoten B zu gelangen, beträgt durchschnittlich 3,63 Schritte. Die maximale Pfaddistanz im Netzwerk beträgt vier Schritte. Die Kürze des Pfades erklärt sich dadurch, dass der Knoten des BMG immer zentral im Netzwerk steht und alle MitgliederInnen miteinander verbindet.
+
+### 3.3.2. Akteursmaße
+
+```{r Broker Gesamtnetzwerk}
+# betweenness = Anzahl der kürzesten Pfade, die über diesen Knoten laufen 
+broker <- betweenness(bmg)
+which.max(broker)
+
+# Weil uns die MitgliederInnen interessieren und nicht der Knoten "BMG", wird der Knoten "bmg" gelöscht:
+broker <-delete.vertices(bmg, V(bmg)[name=="bmg"])
+broker <- betweenness(broker)
+which.max(broker)
+```
+Sabine Bätzing (SPD) nimmt im Gesamtnetzwerk die Broker-Funktion ein. Das bedeutet, dass über ihren Knoten am kürzesten Verbindungen zwischen AkteurInnen hergestellt werden können. Somit weist sie eine hohe Zenträlität auf und hat eine gute Kontrolle über die Verbindungen unter den Alteri (Vermittlungsfunktion). Sie nimmt damit eine hohe soziale Stellung im Netzwerk ein.
+
+```{r Akteursmaße Gesamtnetzwerk}
+
+# Um die In- und Outdegree-Werte zu unterscheiden, lesen wir das Netzwerk nochmals neu ein, diesmal als gerichtetes Netzwerk 
+el <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+edgematrix <-as.matrix(el)
+bmg <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=T)
+bmg
+
+# degree = Anzahl direkter Verbindungen eines Knoten zu anderen AkteurInnnen. AkteurInnen mit vielen Sozialbeziehungen sind wichtiger, als solche mit wenigen.
+degree(bmg, mode="in", normalized = T)
+centr_degree(bmg, mode="in", normalized = T)
+
+degree(bmg, mode="out", normalized = T)
+centr_degree(bmg, mode="out", normalized = T)
+```
+Das BMG fungiert in unserer Untersuchung als zentrale Verbindung aller AkteurInnen des Netzwerkes. Doch in dieser Auswertung wird der Knoten vernachlässigt, um festzustellen, ob es andere Personen oder Institutionen gibt, die eine zentrale Rolle im Netzwerk einnehmen.
+
+Die Knoten mit den meisten Out-Degree-Werten (Aktivität) sind:
+Sabine Bätzing	42
+Helga Kühnmengel	28
+Philipp Rösler 24
+Rolf Schwanitz 18
+Annette Widmann-Mauz 17
+Mechthild Dyckmans 17
+Jens Spahn 15
+Ulrike Flach 15
+Klaus Theo Schröder 12
+Stefan Kapferer 12
+Marlene Mortler 11
+Daniel Bahr 11
+Wolfgang Zöller 10
+Marion Caspers-Merk 10
+Daniela Ludwig 10
+Ulla Schmidt 8
+Hermann Groehe 8
+Claudia Schmidtke 7
+Karl-Josef Laumann 6
+Thomas Ilka 6
+Andreas Westerfellhaus 4
+Thomas Steffen 4
+Thomas Gebhart 4
+Sabine Weiss 3
+Ingrid Fischbach 3
+
+Die Knoten mit den meisten In-Degree-Werten (Popularität) sind:
+Bundesgesundheitsministerium	25
+CDU 11
+FDP 6
+SPD 6
+Gesundheitsausschuss 5
+Europaunion Deutschland e.V. 4
+Bundesministerium für Wirtschaft 4
+Innenausschuss 3
+Rechtsausschuss 3
+Vermittlungsausschuss 3
+Jugend gegen Aids e.V. 2
+Lebenshilfe e.V. 2
+Dienstleistungsgewerkschaft ver.di 2
+Weltwirtschaftsforum 2
+ZDF-Fernsehrat 2
+
+Bei den Out-Degree-Werten fällt auf, dass Sabine Bätzing (SPD) mit 42 ausgehenden Verbindungen am meisten Beziehungen zu Instutitionen führt, gefolgt von Helga Kühnmengel (SPD) mit 28 Verbindungen. Platz drei belegt Philipp Rösler (FDP) mit 24 Verbindungen. Das bedeutet, dass diese AkteurInnen eine hohe Kommunikationsaktivität nach außen aufweisen.
+
+Die In-Degree-Werte können mögliche Schnittpunkte unter den AkteurInnen (Personen/Institutionen) aufzeigen, indem sie darüber Auskunft geben, inwiefern andere Knoten auf sie gerichtet sind. Ein hoher In-Degree-Wert bedeutet eine hohe Popularität und gute Erreichbarkeit des jeweiligen Knotens. Für diese Auswertung werden die In-Degree-Werte, die den Regierungsparteien der jeweiligen Legislaturperioden zufallen, nicht weiter beachtet. Deshalb richten wir den Blick auf die übrig bleibenden Institutionen und Ausschüsse. Von den 25 aufgeführten MitgliederInnen des BMG standen fünf bereits in Verbindung zum Gesundheitsauschuss und vier sowohl zur Europa-Union Deutschland e.V. als auch zum Bundesministerium für Wirtschaft. Auch der Innenausschuss, Rechtsausschuss und der Vermittlungsausschuss weisen Verbindungen zu jeweils drei MitgliederInnen auf.
+
+Die Untersuchung des Degree-Wertes zeigt, dass gleich mehrere MitgliederInnen zu elf gleichen Institutionen in Beziehung stehen. Auf das Gesamtnetzwerk bezogen sind jedoch nur relativ wenige gemeinsame Verbindungen unter den MitgliederInnen des BMG zu Institutionen vorhanden. Diese Aussage lässt sich durch die geringe Dichte des Gesamtnetzwerks untermauern.
+ 
+### 3.2.3. Cluster-Analysen
+
+```{r Walktrap-Cluster Gesamtnetzwerk, fig.height=9, fig.width=16}
+
+cw_gesamt <- cluster_walktrap(bmg)
+cw_gesamt
+
+modularity(cw_gesamt)
+plot(
+  cw_gesamt,
+  bmg,
+  vertex.size = 3,
+  layout = layout_nicely,
+  asp = 0,
+  edge.arrow.size = 0.4
+)
+```
+Die Cluster zeigen die Verbindungen der MitgliederInnen des Bundesgesundheitsministeriums zu ihren Organisationen, Vereinen etc. und sind in dieser Darstellung wenig aussagekräftig. Es gibt 23 Communities, die Modularität beträgt 0,71. Das bedeutet, dass in den Communities eine relativ hohe Modularität vorhanden ist, die Knoten also recht nah beieinander liegen. Bei Netzwerken mit einer hohen Modularität gibt es grundsätzlich dichte Verbindungen zwischen den Knoten innerhalb eines Clusters, sowie spärliche Verbindungen zwischen Knoten in anderen Modulen.
+
+# 4. Teilnetzwerke
+
+# Einleitende Bemerkung
+
+Aufgrund eines Einlesefehlers von RStudio wurden die verschiedenen Teilnetzwerke nicht durch die Edges (subgraph.edges) selektiert, sondern nur durch Löschen von Vertex-Attributen. Durch die Nutzung der Library "tidygraph" wurde versucht, diesen Einlesefehler zu umgehen. Die Limitation hierbei: Die Darstellung als Tidygraph-Objekt ist immer gerichtet. 
+Die Pfeile sind in den nachfolgenden Visualisierungen mit "tidygraph" jeweils zu vernachlässigen.
+
+## 4.1. Teilnetzwerk: BundesgesundheitsministerInnen
+
+Bei der Untersuchung der MitgliederInnen des BMG liegt ein besonderes Augenmerk auf den BundesgesundheitsministerInnen, da diese die leitende Funktion des Bundesgesundheitsminiteriums innehaben. 
+Nachfolgend wird ein Teilnetzwerk der MinisterInnen erstellt. Besonderer Fokus liegt auf den Verbindungen der MinisterInnen zu Institutionen in den Gesundheitssektor. Diese werden nach Dauer der Beziehung visualisiert.
+
+### 4.1.1 Visualisierung 
+
+```{r Erstellen eines tidygraph}
+
+library(igraph)
+library(tidygraph)
+library(ggraph)
+
+# Einlesen Datensatz
+edges <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+
+# Erstellen des tidygraph-Objekt
+bmg <- tbl_graph(nodes,edges)
+bmg
+
+# Prüfen, ob ein tidygraph-Objekt vorliegt
+is.tbl_graph(bmg)
+
+# Aktivieren der Edge- und Nodelist
+bmg %>% activate(edges) %>% as_tibble()
+bmg %>% activate(nodes) %>% as_tibble()
+
+
+# from tidygraph to igraph
+bmg1 <- as.igraph(bmg)
+bmg1
+```
+
+```{r Teilnetzwerk BundesgesundheitsministerInnen, fig.height=9, fig.width=16}
+
+# Löschen aller MitgliederInnen des BMG, die nicht function == 1 (Minister) haben
+member <- delete.vertices(bmg1, V(bmg1)[function. == 2])
+member1 <- delete.vertices(member, V(member)[function. == 3])
+minister <- delete.vertices(member1, V(member1)[function. == 4])
+
+# Einfärben der BundesgesundheitsministerInnen in gold
+vcol <- rep("grey70", vcount(minister))
+vcol[V(minister)$function. == 1] <- "gold"
+
+# Visualisierung: Version 1
+plot (
+  minister,
+  asp = 0,
+  rescale = T,
+  vertex.size = 4,
+  vertex.frame.width = 0.01,
+  edge.width = 0.3,
+  vertex.label=NA,
+  main = "Teilnetzwerk der Bundesgesundheitsminister",
+  vertex.color = vcol,
+)
+
+
+# Visualisierung: Version 2
+
+# Herauschlöschen der Isolates
+minister <- delete.vertices(minister, degree(minister) == 0)
+
+# Markieren der BundesgesundheitsministerInnen, 
+vcol <- rep("grey70", vcount(minister))
+vcol[V(minister)$function. == 1] <- "gold" # Minister in Gold
+vcol[V(minister)$health_sector == 1] <- "orangered4" # Gesundheitssektor in Orange
+vcol[V(minister)$health_category == 1] <- "red" # Pharmakonzerne in Rot
+
+# Form der Institutionen nach Gesundheitssektor (health_sector) selektiert
+V(minister)[V(minister)$health_sector== 1]$shape <- "square" #TRUE
+V(minister)[V(minister)$health_sector== 2]$shape <- "circle" #FALSE
+V(minister)[V(minister)$health_sector== 99]$shape <- "circle" #FALSE
+
+plot (
+  minister,
+  layout=layout_with_kk,
+  asp = 0,
+  rescale = T,
+  vertex.size = 4,
+  vertex.frame.width = NA,
+  vertex.label.cex = 1.2 ,
+  vertex.color=vcol,
+  edge.width=E(minister)$duration^2,
+  edge.arrow.size=0.01,
+  main = "Teilnetzwerk der BundesgesundheitsministerInnen",
+  sub ="Länge der Beziehung nach Dicke der Kanten, 
+  Gesundheitssektor: quadtratisch & dunkelrot, Pharmaindustrie in rot"
+)
+
+
+# Visualisierung: Version 3 - Aktive Verbindungen
+
+E(minister)[E(minister)$status== 1]$color <- "green" 
+E(minister)[E(minister)$status== 2]$color <- "red" 
+E(minister)[E(minister)$status== 99]$color <- "grey60" 
+
+plot (
+  minister,
+  layout=layout_with_kk,
+  asp = 0,
+  rescale = T,
+  vertex.size = 4,
+  vertex.frame.width = NA,
+  vertex.label.cex = 1.2 ,
+  vertex.color=vcol,
+  edge.width=E(minister)$duration^2,
+  edge.arrow.size=0.01,
+  main = "Teilnetzwerk der BundesgesundheitsministerInnen",
+  sub ="Aktive Beziehungen: grün, inaktive: rot, Gesundheitssektor: quadratisch und dunkelrot, Pharmaindustrie: rot"
+)
+
+```
+In diesem Teilnetzwerk wurden die BundesgesundheitsministerInnen der letzten vier Legislaturperioden betrachtet, wohingegen alle dokumentierten Tätigkeiten ihrer beruflichen Laufbahn mitaufgenommen wurden. In der Legislaturperiode von 2009 bis 2013 gab es während der Legislaturperiode einen Ministerwechsel, weshalb sich fünf MinisterInnen in der Visualisierung finden.
+
+Der Fokus dieser Analyse liegt auf den aktiven Verbindungen der BundesgesundheitsministerInnen zu Insitutionen im Gesundheitssektor.
+Jens Spahn unterhält während seines Amts zwei aktive Verbindungen zum Gesundheitssektor ("Jugend gegen Aids e.V." und Stiftung "Humanitäre Hilfe für durch Blutprodukte HIV infizierte Personen"). Daniel Bahr unterhält bis heute drei aktive Verbindungen zum Gesundheitssektor, unter anderem auch zu "Jugend gegen Aids e.V.". Phillip Rösler führt drei aktive Verbindungen zum Gesundheitssektor. Darunter findet sich unter anderem die "Siemens Healthineers AG", die "Bertelsmann Stiftung" und der Pharmakonzern "PureHolding GmbH" aus der Schweiz. Ulla Schmidt weist eine aktive Verbindung zum Gesundheitssektor auf ("Lebenshilfe e.V.").
+
+Die Länge der jeweiligen Beziehung wird durch die Dicke der Kanten ersichtlich.
+
+### 4.1.2. Netzwerkmaße
+
+```{r Netzwerkmaße Teilnetzwerk BundesgesundheitsministerInnen}
+
+# Knoten mit den meisten Degree-Werten
+degree(minister, normalized = F)
+which.max(degree(minister, normalized = F))
+```
+Bundesgesundheitsminister Philipp Rösler hat mit 24 Verbindungen die meisten Verbindungen unter den MinisterInnen. Acht davon können dem Gesundheitssektor zugeordnet werden. 
+
+## 4.2. Teilnetzwerk: Gesundheitssektor
+
+### 4.2.1. Visualisierung
+
+Wir untersuchen, ob die MitgliederInnen des BMG Verbindungen zu Knoten im Gesundheitssektor haben beziehungsweise hatten. 
+Dabei werden die Knoten, die dem Gesundheitssektor angehören, mittels verschiedener Unterkategorien [health_category] und durch das Vertex-Attribut [health_sector] visuell voneinander abgehoben.
+
+Vertex-Attribut [health_category]:
+1 = Pharmakonzerne
+2 = Medizintechnikhersteller
+3 = Krankenhäuser
+4 = Verband/Stiftung
+5 = Sonstiges
+
+```{r Visualisierung Teilnetzwerk Gesundheitssektor, echo=TRUE, fig.height=9, fig.width=16}
+
+el <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+# Matrix erstellen
+edgematrix <-as.matrix(el)
+# Die Daten werden im Dataframe gespeichert
+bmg <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=F)
+
+# Löscht alle Knoten mit health_sector gleich 2, also alle Institutionen, die nicht dem Gesundheitssektor zugeordnet werden
+healthsector <- delete.vertices(bmg, V(bmg)[health_sector==2])
+healthsector
+
+# Erste Visualisierung
+vcol <- rep("grey70", vcount(healthsector))
+vcol[V(healthsector)$type == 1] <- "gold" # Mitglieder in gold
+
+# Formen der Knoten der MinisterInnen als Kreis, Organisationen als Quadrat
+V(healthsector)[V(healthsector)$type== 1]$shape <- "circle" #TRUE
+V(healthsector)[V(healthsector)$type== 2]$shape <- "square" #FALSE
+
+# Visualisierung: Version 1
+plot  (
+  healthsector,
+  asp = 0,
+  rescale = T,
+  vertex.size = 4,
+  edge.width = 1.5,
+  vertex.label.cex = 1.1,
+  vertex.color=vcol,
+  main = "Teilnetzwerk Gesundheitssektor"
+)
+
+# Visualisierung: Version 2 - Health_category aufgeschlüsselt
+col_type <- c("red", "lightblue", "springgreen", "orange", "pink")
+type <- c("Pharmakonzern", "Medizintechnikhersteller", "Krankenhäuser", "Verband/Stiftung", "Sonstiges")
+V(healthsector)$color <- col_type[V(healthsector)$health_category]
+
+V(healthsector)[V(healthsector)$type== 1]$shape <- "circle" #TRUE
+V(healthsector)[V(healthsector)$type== 2]$shape <- "square" #FALSE
+
+plot (
+  healthsector,
+  asp = 0,
+  rescale = T,
+  vertex.size = 4,
+  edge.width = 1.5,
+  vertex.label.cex = 1.1,
+  main = "Teilnetzwerk Gesundheitssektor",
+  sub="Knoten im Gesundheitssektor in Unterkategorien",
+)
+
+legend(x=0.8, # Position auf der X-Achse
+       y=-0.8, # Position auf der Y-Achse
+       legend = type, 
+       col = col_type, # Farbcodierung nach Vector colrs
+       text.col= col_type, # Farbe der Legende in der Farbe des Vectors
+       bty = "n", # verhindert, dass eine Box gezogen wird
+       pch=20, # plotting characters: definiert einen Kreis (siehe ?graphics)
+       pt.cex = 1, # definiert die Textgröße
+       cex = 2, # skaliert die gesamte Legende
+       inset = c(0.1, 0.1) # rückt die Legende leicht ein
+       )
+
+
+```
+
+### 4.2.2. Netzwerkmaße
+
+```{r Netzwerkmaße Teilnetzwerk Gesundheitssektor}
+
+## Dichte des Netzwerks
+edge_density(healthsector, loops=FALSE)
+
+## Mittlere Pfaddistanz
+mean_distance(healthsector)
+## Pfaddistanzen (Distance)
+farthest_vertices(healthsector)
+
+## Umfang des Netzwerks
+get_diameter(healthsector)
+```
+Das Teilnetzwerk Gesundheitssektor besteht aus 93 Knoten mit 98 Beziehungen. Von den 257 Knoten des Gesamtnetzwerkes sind also 36,18% (!) dem Gesundheitssektor zuzuordnen. Zieht man von den 93 Knoten die 25 Knoten der MitgliederInnen ab, bleiben 68 Knoten des Type "Organisation" übrig. Mit den 25 MitgliederInnen des Bundesgesundheitsministeriums stehen oder standen also 68 Organisationen im Gesundheitssektor in Verbindung!
+
+Drei MitgliederInnen des BMG stehen oder standen in direkter Beziehung zu Unternehmen der Pharmaindustrie.
+
+Die Dichte des Teilnetzwerks "Gesundheitssektor" beträgt 2,29%. Sie ist also mehr als doppelt so hoch wie die Dichte des Gesamtnetzwerks, wobei die mittlere Pfaddistanz 3,30 beträgt, sie ist also geringer als beim Gesamtnetzwerk.
+
+### 4.2.3. Cluster-Analyse
+
+```{r Walktrap-Cluster des Teilnetzwerks Gesundheitssektor, fig.height=9, fig.width=16}
+
+cw_gesundheitssektor <- cluster_walktrap(healthsector)
+cw_gesundheitssektor
+
+# Modularitätswert berechnen 
+modularity(cw_gesundheitssektor)
+
+# Cluster plotten
+plot(
+  cw_gesundheitssektor,
+  healthsector,
+  vertex.size = 3,
+  layout = layout_nicely,
+  asp = 0,
+  edge.arrow.size = 0.4,
+  main="Communities im Gesundheitssektor"
+)
+```
+Im Teilnetzwerk Gesundheitssektor gibt es 16 Gruppen. Die Modularität beträgt 0,70. Die Communities der MitgliederInnen stehen zum großen Teil in keiner Beziehung zueinander. Nur die Gruppen um Helga Kühn-Mengel, Wolfgang Zoeller, Mechthild Dyckmans, Sabine Bätzing, Daniel Bahr, und Jens Spahn weisen Überschneidungen auf.
+Deutlich erkennbar ist: Zwischen den MitgliederInnen des BMG bestehen genau drei gemeinsame Verbindungen zu Organisationen im Gesundheitssektor ("Ausschuss für Gesundheit", "Lebenshilfe e.V." und "Jugend gegen Aids e.V.").
+
+## 4.3. Teilnetzwerk: Legislaturperioden
+
+```{r Visualisierung Teilnetzwerk Legislaturperioden, fig.height=10, fig.width=16}
+
+el <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+edgematrix <-as.matrix(el)
+bmg <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=F)
+list.edge.attributes(bmg)
+bmg
+
+# Zur besseren Visualisierung löschen wir noch die Knoten der Parteien; die Parteizugehörigkeit wird bei den Mitgliedern direkt farblich gekennzeichnet 
+bmg <- delete_vertices(bmg,V(bmg)[name=="cdu"])
+bmg <- delete_vertices(bmg,V(bmg)[name=="spd"])
+bmg <- delete_vertices(bmg,V(bmg)[name=="fdp"])
+
+# Legislaturperiode 1
+leg1 <- delete.vertices(bmg, V(bmg)[period == "2"])
+leg1 <- delete.vertices(leg1, V(leg1)[period == "3"])
+leg1 <- delete.vertices(leg1, V(leg1)[period == "4"])
+leg1 <- delete.vertices(leg1, degree(leg1) == 0)
+leg1
+
+# Legislaturperiode 2
+leg2 <- delete.vertices(bmg, V(bmg)[period == "1"])
+leg2 <- delete.vertices(leg2, V(leg2)[period == "3"])
+leg2 <- delete.vertices(leg2, V(leg2)[period == "4"])
+leg2 <- delete.vertices(leg2, degree(leg2) == 0)
+leg2
+
+# Legislaturperiode 3
+leg3 <- delete.vertices(bmg, V(bmg)[period == "1"])
+leg3 <- delete.vertices(leg3, V(leg3)[period == "2"])
+leg3 <- delete.vertices(leg3, V(leg3)[period == "4"])
+leg3 <- delete.vertices(leg3, degree(leg3) == 0)
+leg3
+
+# Legislaturperiode 4
+leg4 <- delete.vertices(bmg, V(bmg)[period == "1"])
+leg4 <- delete.vertices(leg4, V(leg4)[period == "2"])
+leg4 <- delete.vertices(leg4, V(leg4)[period == "3"])
+leg4 <- delete.vertices(leg4, degree(leg4) == 0)
+leg4
+
+# Visualisierung 
+
+# Knoten werden in Parteifarben eingefärbt und der Form nach zugeordnet, ob sie dem Gesundheitssektor angehören oder nicht
+# Kanten unterteilt in Farben je nach Tätigkeit
+
+V(leg1)[V(leg1)$health_sector == 1]$shape <- "square"
+V(leg1)[V(leg1)$health_sector == 2]$shape <- "circle"
+V(leg1)[V(leg1)$health_sector == 99]$shape <- "circle"
+
+V(leg1)[V(leg1)$party == 1]$color <- "grey40"
+V(leg1)[V(leg1)$party == 2]$color <- "red2"
+V(leg1)[V(leg1)$party == 5]$color <- "yellow"
+V(leg1)[V(leg1)$party ==99]$color <- "grey80"
+
+E(leg1)[E(leg1)$relation == " 1"]$color <- "olivedrab3" # Hauptamt
+E(leg1)[E(leg1)$relation == " 2"]$color <- "orange" # Nebenamt
+E(leg1)[E(leg1)$relation == " 3"]$color <- "royalblue3" # Ehrenamt
+E(leg1)[E(leg1)$relation == " 4"]$color <- "mediumorchid2" # Mitgliedschaft
+E(leg1)[E(leg1)$relation == " 5"]$color <- "grey" # einmalige entgeldliche Tätigkeit
+E(leg1)[E(leg1)$relation == " 6"]$color <- "grey" # Sonstiges
+E(leg1)[E(leg1)$relation == " 7"]$color <- "grey" # Aussschussmitgliedschaft
+E(leg1)[E(leg1)$relation == " 8"]$color <- "grey" # Ministeriumszugehörigkeit
+
+
+V(leg2)[V(leg2)$health_sector == 1]$shape <- "square"
+V(leg2)[V(leg2)$health_sector == 2]$shape <- "circle"
+V(leg2)[V(leg2)$health_sector == 99]$shape <- "circle"
+
+V(leg2)[V(leg2)$party == 1]$color <- "grey40"
+V(leg2)[V(leg2)$party == 2]$color <- "red2"
+V(leg2)[V(leg2)$party == 5]$color <- "yellow"
+V(leg2)[V(leg2)$party ==99]$color <- "grey80"
+
+E(leg2)[E(leg2)$relation == " 1"]$color <- "olivedrab3" # Hauptamt
+E(leg2)[E(leg2)$relation == " 2"]$color <- "orange" # Nebenamt
+E(leg2)[E(leg2)$relation == " 3"]$color <- "royalblue3" # Ehrenamt
+E(leg2)[E(leg2)$relation == " 4"]$color <- "mediumorchid2" # Mitgliedschaft
+E(leg2)[E(leg2)$relation == " 5"]$color <- "grey" # einmalige entgeldliche Tätigkeit
+E(leg2)[E(leg2)$relation == " 6"]$color <- "grey" # Sonstiges
+E(leg2)[E(leg2)$relation == " 7"]$color <- "grey" # Aussschussmitgliedschaft
+E(leg2)[E(leg2)$relation == " 8"]$color <- "grey" # Ministeriumszugehörigkeit
+
+
+V(leg3)[V(leg3)$health_sector == 1]$shape <- "square"
+V(leg3)[V(leg3)$health_sector == 2]$shape <- "circle"
+V(leg3)[V(leg3)$health_sector == 99]$shape <- "circle"
+
+V(leg3)[V(leg3)$party == 1]$color <- "grey40"
+V(leg3)[V(leg3)$party == 2]$color <- "red2"
+V(leg3)[V(leg3)$party == 5]$color <- "yellow"
+V(leg3)[V(leg3)$party ==99]$color <- "grey80"
+
+E(leg3)[E(leg3)$relation == " 1"]$color <- "olivedrab3" # Hauptamt
+E(leg3)[E(leg3)$relation == " 2"]$color <- "orange" # Nebenamt
+E(leg3)[E(leg3)$relation == " 3"]$color <- "royalblue3" # Ehrenamt
+E(leg3)[E(leg3)$relation == " 4"]$color <- "mediumorchid2" # Mitgliedschaft
+E(leg3)[E(leg3)$relation == " 5"]$color <- "grey" # einmalige entgeldliche Tätigkeit
+E(leg3)[E(leg3)$relation == " 6"]$color <- "grey" # Sonstiges
+E(leg3)[E(leg3)$relation == " 7"]$color <- "grey" # Aussschussmitgliedschaft
+E(leg3)[E(leg3)$relation == " 8"]$color <- "grey" # Ministeriumszugehörigkeit
+
+
+V(leg4)[V(leg4)$health_sector == 1]$shape <- "square"
+V(leg4)[V(leg4)$health_sector == 2]$shape <- "circle"
+V(leg4)[V(leg4)$health_sector == 99]$shape <- "circle"
+
+V(leg4)[V(leg4)$party == 1]$color <- "grey40"
+V(leg4)[V(leg4)$party == 2]$color <- "red2"
+V(leg4)[V(leg4)$party == 5]$color <- "yellow"
+V(leg4)[V(leg4)$party ==99]$color <- "grey80"
+V(leg4)[V(leg4)$health_sector ==1]$frame.color <- "gold"
+V(leg4)[V(leg4)$health_sector ==2]$frame.color <- "transparent"
+V(leg4)[V(leg4)$health_sector ==99]$frame.color <- "transparent"
+E(leg4)[E(leg4)$relation == " 1"]$color <- "olivedrab3" # Hauptamt
+E(leg4)[E(leg4)$relation == " 2"]$color <- "orange" # Nebenamt
+E(leg4)[E(leg4)$relation == " 3"]$color <- "royalblue3" # Ehrenamt
+E(leg4)[E(leg4)$relation == " 4"]$color <- "mediumorchid2" # Mitgliedschaft
+E(leg4)[E(leg4)$relation == " 5"]$color <- "grey" # einmalige entgeldliche Tätigkeit
+E(leg4)[E(leg4)$relation == " 6"]$color <- "grey" # Sonstiges
+E(leg4)[E(leg4)$relation == " 7"]$color <- "grey" # Aussschussmitgliedschaft
+E(leg4)[E(leg4)$relation == " 8"]$color <- "grey" # Ministeriumszugehörigkeit
+
+plot(leg1,
+     layout=layout_with_kk,
+  asp = 0,
+  rescale = T,
+  vertex.size = 4,
+  vertex.frame.width = 0.1,
+  edge.width = 5,
+  vertex.label.cex = 1.4,
+    vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+  vertex.frame.color="white",
+  main = "Legislaturperiode 2005-2009",
+  sub= "grün= Hauptamt orange= Nebenamt blau= Ehrenamt lila= Mitgliedschaft grau= Sonstiges" 
+)
+
+plot(leg2,
+      layout=layout_with_kk,
+  asp = 0,
+  rescale = T,
+  vertex.size = 4,
+  vertex.frame.width = .1,
+  edge.width = 5,
+  vertex.label.cex = 1.4,
+    vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+  vertex.frame.color="white",
+  main = "Legislaturperiode 2009-2013",
+  sub="grün= Hauptamt orange= Nebenamt blau= Ehrenamt lila= Mitgliedschaft grau= Sonstiges" 
+)
+
+plot(leg3,
+  layout=layout_with_kk,
+  asp = 0,
+  rescale = T,
+  vertex.size = 4,
+  vertex.frame.width = .1,
+  edge.width = 5,
+  vertex.label.cex = 1.4,
+    vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+  vertex.frame.color="white",
+  main = "Legislaturperiode 2013-2017",
+    sub="grün= Hauptamt orange= Nebenamt blau= Ehrenamt lila= Mitgliedschaft grau= Sonstiges" 
+)
+
+plot(leg4,
+  layout=layout_with_kk,
+  asp = 0,
+  rescale = T,
+  vertex.size = 4,
+  edge.width = 5,
+  vertex.label.cex = 1.4,
+    vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+  main = "Legislaturperiode 2017-2021",
+    sub="grün= Hauptamt orange= Nebenamt blau= Ehrenamt lila= Mitgliedschaft grau= Sonstiges" 
+)
+
+```
+Bei den MitgliederInnen der Legislaturperiode 1 (2005-2009) finden sich 104 Knoten, davon sind 24 dem Gesundheitssektor zuzuordnen.
+Bei den MitgliederInnen der Legislaturperiode 2 (2009-2013) finden sich 84 Knoten, davon sind 20 dem Gesundheitssektor zuzuordnen.
+Bei den MitgliederInnen der Legislaturperiode 3 (2013-2017) finden sich 40 Knoten, davon sind 7 dem Gesundheitssektor zuzuordnen.
+Bei den MitgliederInnen der Legislaturperiode 4 (2017-2021) finden sich 43 Knoten, davon sind 17 dem Gesundheitssektor zuzuordnen.
+
+Ersichtlich ist, dass MitgliederInnen der früheren Legislaturperioden deutlich mehr Verbindungen haben, als die der letzten.
+
+## 4.4. Teilnetzwerk: Aktuelle Legislaturperiode 
+
+Aus Gründen der Aktualität soll die aktuelle Legislaturperiode um Jens Spahn genauer betrachtet werden.
+
+```{r Erstellen eines tidygraph}
+
+# Die aktuelle Legislaturperiode soll genauer betrachtet werden.
+# Dafür arbeiten wir wieder mit "tidygraph", um die Dicke der Kanten visualisieren zu können.
+
+library(igraph)
+library(tidygraph)
+library(ggraph)
+
+# Einlesen Datensatz
+edges <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+
+# Erstellen des tidygraph-Objekts
+bmg <- tbl_graph(nodes,edges)
+bmg
+
+# Prüfen, ob ein tidygraph-Objekt vorliegt
+is.tbl_graph(bmg)
+
+# Aktivieren der Edge- und Nodelist
+bmg %>% activate(edges) %>% as_tibble()
+bmg %>% activate(nodes) %>% as_tibble()
+
+# from tidygraph to igraph
+bmg1 <- as.igraph(bmg)
+bmg1
+```
+
+```{r Teilnetzwerk Aktuelle Legislaturperiode, fig.height=10, fig.width=16}
+
+# Löschen der Vertices in anderen Legislaturperioden
+aktuell <- delete.vertices(bmg1, V(bmg1)[period == 1])
+aktuell <- delete.vertices(aktuell, V(aktuell)[period == 2])
+aktuell <- delete.vertices(aktuell, V(aktuell)[period == 3])
+# Löschen der Isolates
+aktuell <- delete.vertices(aktuell, degree(aktuell) == 0)
+
+# Visualisierung: Version 1
+# Knoten im Gesundheitssektor in Form verändern
+V(aktuell)[V(aktuell)$health_sector == 1]$shape <- "square" 
+V(aktuell)[V(aktuell)$health_sector == 2]$shape <- "circle" 
+V(aktuell)[V(aktuell)$health_sector == 99]$shape <- "circle" 
+
+# Mitglieder des BMG einfärben
+V(aktuell)[V(aktuell)$type == 2]$color <- "grey90"
+V(aktuell)[V(aktuell)$type == 1]$color <- "gold" # Mitglieder des BMG 
+
+# Einfärben der Kanten nach aktiven/inaktiven/unbekannten Verbindunen
+E(aktuell)[E(aktuell)$status==1]$color <- "green" # Aktive Verbindungen
+E(aktuell)[E(aktuell)$status==2]$color <- "red" # Inaktive Verbindungen
+E(aktuell)[E(aktuell)$status==99]$color <- "grey" # Unbekannter Status der Verbindungen
+
+# Dicke der Knoten nach Degree-Wert
+ds <- degree(aktuell, normalized = T)
+ds
+
+plot(aktuell,
+     layout=layout_with_fr,
+  asp = 0,
+  rescale = T,
+  vertex.size = ds*50,
+  vertex.label.cex = 1.8,
+  edge.arrow.size=0.1 ,
+  edge.width=5,
+  vertex.label.family = "Helvetica",
+  vertex.label.color = "black",
+  vertex.frame.color="white",
+  main = "Legislaturperiode 2017-2021",
+    sub="Größe der Knoten nach Degree-Wert" 
+)
+
+# Visualisierung: Version 2 - Dauer der Tätigkeit 
+# Dicke der Kanten nach dem Attribut "duration"
+
+# Den Werten mit 99 wird der Wert 1 zugeordnet
+E(aktuell)[E(aktuell)$duration == 99]$duration <- 1
+E(aktuell)$duration
+
+plot(aktuell,
+    layout=layout_with_fr,
+  asp = 0,
+  rescale = T,
+  vertex.label.cex = 1.5,
+  vertex.label.family = "Helvetica",
+  vertex.label.color = "black",
+  vertex.frame.color="white",
+  vertex.size=5,
+  edge.arrow.size=0.1 ,
+  edge.width=E(aktuell)$duration^2,
+  main = "Legislaturperiode 2017-2021",
+    sub="Größe der Kanten nach Dauer der Beziehung, aktive Verbindungen: grün, inaktive: rot, Knoten im Gesundheitssektor quadratisch" 
+)
+
+```
+In der aktuellen Legislaturperiode finden sich 17 Verbindungen in den Gesundheitssektor. Auffällig ist, dass die Drogenbeauftragte Daniela Ludwig ausschließlich aktive Verbindungen aufweist. Dahingegen gibt es sowohl bei Thomas Steffen als auch bei Andreas Westerfellhaus keinerlei aktive Verbindungen. Bundesgesundheitsminister Jens Spahn hat mit 13 Verbindungen die meisten Kanten, jedoch sind nur vier davon aktiv. Sechs dieser Verbindungen gehen in den Gesundheitssektor, wovon zwei Verbindungen noch aktiv sind.
+
+# 5. Ego-Netzwerke
+
+## 5.1. Wichtige Akteure/Broker
+
+Für die Knoten mit den höchsten Degree-Werten fertigen wir Ego-Netzwerke an: Sabine Bätzing (SPD), Helga Kühnmengel (SPD) und Phillip Rösler (FDP). Dabei interessiert uns, welcher Branche die Knoten zuzuordnen sind.
+
+```{r Egograph Wichtige Akteure/Broker, fig.height=10, fig.width=16}
+
+el <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+edgematrix <-as.matrix(el)
+bmg <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=F)
+# Wir möchten nun das Ego-Netzwerk der Person mit den meisten Verbindungen anzeigen lassen
+V(bmg)$egos <- ego_size(bmg)
+vertex.attributes(bmg)$egos
+which.max(vertex.attributes(bmg)$egos)
+# Dies liefert uns den Knoten 21 mit 42 Verbindungen: Sabine Baetzing
+
+# Lässt nur eine Verbindung pro Knoten anzeigen
+bmg_simplify <-delete.edges(bmg,E(bmg)[which_multiple(bmg, eids = E(bmg))])
+
+# Erzeugt ein Ego-Netzwerk
+ego_g <- make_ego_graph( bmg_simplify,order = 1,nodes = V(bmg_simplify)$name == "baetzing", mode = "all")
+ego_bae <- ego_g[[1]]
+
+ego_ku <- make_ego_graph( bmg_simplify,order = 1,nodes = V(bmg_simplify)$name == "kuehnmengel", mode = "all")
+ego_kue <- ego_ku[[1]]
+
+ego_ro <- make_ego_graph( bmg_simplify,order = 1,nodes = V(bmg_simplify)$name == "roesler", mode = "all")
+ego_roe <- ego_ro[[1]]
+
+
+col_type <- c("transparent", "blue", "lightblue", "orange", "red")
+type <- c(" ", "Unternehmen", "Verein/ Organisation", "politische Institution", "Stiftung")
+V(ego_bae)$color <- col_type[V(ego_bae)$type_detail]
+
+col_type <- c("transparent", "blue", "lightblue", "orange", "red")
+type <- c(" ", "Unternehmen", "Verein/ Organisation", "politische Institution", "Stiftung")
+V(ego_kue)$color <- col_type[V(ego_kue)$type_detail]
+
+col_type <- c("transparent", "blue", "lightblue", "orange", "red")
+type <- c(" ", "Unternehmen", "Verein/ Organisation", "politische Institution", "Stiftung")
+V(ego_roe)$color <- col_type[V(ego_roe)$type_detail]
+
+
+V(ego_bae)[V(ego_bae)$health_sector == 1]$shape <- "square" # Insitution im Gesundheitssektor
+V(ego_bae)[V(ego_bae)$health_sector == 2]$shape <- "circle" # Institution nicht im Gesundheitssektor
+V(ego_bae)[V(ego_bae)$health_sector == 99]$shape <- "circle" # Institution nicht im Gesundheitssektor
+
+V(ego_kue)[V(ego_kue)$health_sector == 1]$shape <- "square" # Insitution im Gesundheitssektor
+V(ego_kue)[V(ego_kue)$health_sector == 2]$shape <- "circle" # Institution nicht im Gesundheitssektor
+V(ego_kue)[V(ego_kue)$health_sector == 99]$shape <- "circle" # Institution nicht im Gesundheitssektor
+
+V(ego_roe)[V(ego_roe)$health_sector == 1]$shape <- "square" # Insitution im Gesundheitssektor
+V(ego_roe)[V(ego_roe)$health_sector == 2]$shape <- "circle" # Institution nicht im Gesundheitssektor
+V(ego_roe)[V(ego_roe)$health_sector == 99]$shape <- "circle" # Institution nicht im Gesundheitssektor
+
+plot(
+  ego_bae,
+     main = "Ego-Netzwerk Sabine Baetzing (SPD)",
+    sub="42 Verbindungen, Knoten im Gesundheitssektor quadratisch",
+     vertex.size=9,
+     layout = layout_in_circle,
+     vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+     vertex.label.cex=c(1.3),
+     vertex.label.dist=-.3,
+)
+
+legend(x=1, # Position auf der X-Achse
+       y=-1, # Position auf der Y-Achse
+       legend = type, 
+       col = col_type, # Farbcodierung nach Vector colrs
+       text.col= col_type, # Farbe der Legende in der Farbe des Vectors
+       bty = "n", # verhindert, dass eine Box gezogen wird
+       pch=20, # plotting characters: definiert einen Kreis (siehe ?graphics)
+       pt.cex = 1, # definiert die Textgröße
+       cex = 2, # skaliert die gesamte Legende
+       inset = c(0.1, 0.1) # rückt die Legende leicht ein.
+       )
+
+plot(
+  ego_kue,
+     main = "Ego-Netzwerk Helga Kuehnmengel (SPD)",
+  sub="28 Verbindungen, Knoten im Gesundheitssektor quadratisch",
+     vertex.size=9,
+     layout = layout_in_circle,
+     vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+     vertex.label.cex=c(1.3),
+     vertex.label.dist=-.3,
+)
+
+legend(x=1, # Position auf der X-Achse
+       y=-1, # Position auf der Y-Achse
+       legend = type, 
+       col = col_type, # Farbcodierung nach Vector colrs
+       text.col= col_type, # Farbe der Legende in der Farbe des Vectors
+       bty = "n", # verhindert, dass eine Box gezogen wird
+       pch=20, # plotting characters: definiert einen Kreis (siehe ?graphics)
+       pt.cex = 1, # definiert die Textgröße
+       cex = 2, # skaliert die gesamte Legende
+       inset = c(0.1, 0.1) # rückt die Legende leicht ein.
+       )
+
+plot(
+  ego_roe,
+     main = "Ego-Netzwerk Philipp Roesler (FDP)",
+    sub="24 Verbindungen, Knoten im Gesundheitssektor quadratisch",
+     vertex.size=9,
+     layout = layout_in_circle,
+     vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+     vertex.label.cex=c(1.3),
+     vertex.label.dist=-.3,
+)
+
+legend(x=1, # Position auf der X-Achse
+       y=-1, # Position auf der Y-Achse
+       legend = type, 
+       col = col_type, # Farbcodierung nach Vector colrs
+       text.col= col_type, # Farbe der Legende in der Farbe des Vectors
+       bty = "n", # verhindert, dass eine Box gezogen wird
+       pch=20, # plotting characters: definiert einen Kreis (siehe ?graphics)
+       pt.cex = 1, # definiert die Textgröße
+       cex = 2, # skaliert die gesamte Legende
+       inset = c(0.1, 0.1) # rückt die Legende leicht ein.
+       )
+```
+Es fällt auf, dass Sabine Bätzing trotz insgesamt 42 Verbindungen keine einzige Kante zu einem Unternehmen hat, Helga Kühn-Mengel von 28 Verbindungen nur eine Kante zu einem Unternehmen vorweist, während bei Philipp Rösler von 24 Verbindungen sieben Kanten zu verschiedenen Unternehmen führen.
+Die Untersuchung zeigt, dass Bätzing über 28 Verbindungen zu Stiftungen, politischen Institutionen sowie Vereinen und Organisationen verfügt und Kühn-Mengel über 16. Rösler dagegen weist nur 5 Pfade zu Vereinen und Organisationen auf. 
+Ein besonderes Merkmal sind die Verbindungen der drei PolitikerInnen zu Institutionen, die dem Gesundheitssektor zugehörig sind. Hier verfügen alle drei PolitikerInnen über jeweils neun Verbindungen.
+
+## 5.2. Parteien
+
+Wir wollen auf einen Blick sehen, ob die MitgliederInnen der verschiedenen Parteien primär Verbindungen in gewissen Branchen haben. Dazu werden Ego-Netzwerke zweiten Grades der Parteien erhoben, der zentrale Knoten des BMG wird also rausgelöscht. Die Knoten werden anschließend nach Art des Knotens eingefärbt (siehe Ego-Graph der Wichtigen Akteure/Broker).
+
+```{r Egograph Parteien, fig.height=10, fig.width=16}
+
+el <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+edgematrix <-as.matrix(el)
+bmg <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=F)
+
+# Wir möchten die direkten Verbindungen der Parteien zu den Institutionen anzeigen lassen. Dafür löschen wir das BMG und die jeweiligen MitgliederInnen.
+bmg <- delete.vertices(bmg,V(bmg)[name=="bmg"])
+
+# Wir möchten nun das Ego-Netzwerk des Knotens mit den meisten Verbindungen anzeigen lassen
+V(bmg)$egos <- ego_size(bmg)
+
+# Lässt nur eine Verbindung pro Knoten anzeigen
+bmg_simplify <-delete.edges(bmg,E(bmg)[which_multiple(bmg, eids = E(bmg))])
+
+# Erzeugt ein Ego-Netzwerk
+ego_c <- make_ego_graph( bmg_simplify,order = 2,nodes = V(bmg_simplify)$name == "cdu", mode = "all")
+ego_cdu <- ego_c[[1]]
+ego_cdu
+
+ego_s <- make_ego_graph( bmg_simplify,order = 2,nodes = V(bmg_simplify)$name == "spd", mode = "all")
+ego_spd <- ego_s[[1]]
+ego_spd
+
+ego_f <- make_ego_graph( bmg_simplify,order = 2,nodes = V(bmg_simplify)$name == "fdp", mode = "all")
+ego_fdp <- ego_f[[1]]
+ego_fdp
+
+# Visualisierung nach Art des Knotens 
+col_type <- c("transparent", "blue", "lightblue", "orange", "red")
+type <- c(" ", "Unternehmen", "Verein/Organisation", "politische Institution", "Stiftung")
+V(ego_cdu)$color <- col_type[V(ego_cdu)$type_detail]
+
+col_type <- c("transparent", "blue", "lightblue", "orange", "red")
+type <- c(" ", "Unternehmen", "Verein/Organisation", "politische Institution", "Stiftung")
+V(ego_spd)$color <- col_type[V(ego_spd)$type_detail]
+
+col_type <- c("transparent", "blue", "lightblue", "orange", "red")
+type <- c(" ", "Unternehmen", "Verein/Organisation", "politische Institution", "Stiftung")
+V(ego_fdp)$color <- col_type[V(ego_fdp)$type_detail]
+
+# Einfärben des Knotens der Partei in Parteifarbe
+V(ego_spd)[V(ego_spd)$name == "spd"]$color <- "darkred" 
+V(ego_fdp)[V(ego_fdp)$name == "fdp"]$color <- "yellow" 
+V(ego_cdu)[V(ego_cdu)$name == "cdu"]$color <- "grey20" 
+
+# Unternehmen im Gesundheitssektor als Quadrat 
+V(ego_cdu)[V(ego_cdu)$health_sector == 1]$shape <- "square" # Insitution im Gesundheitssektor
+V(ego_cdu)[V(ego_cdu)$health_sector == 2]$shape <- "circle" # Institution nicht im Gesundheitssektor
+V(ego_cdu)[V(ego_cdu)$health_sector == 99]$shape <- "circle" # Institution nicht im Gesundheitssektor
+
+V(ego_fdp)[V(ego_fdp)$health_sector == 1]$shape <- "square" # Insitution im Gesundheitssektor
+V(ego_fdp)[V(ego_fdp)$health_sector == 2]$shape <- "circle" # Institution nicht im Gesundheitssektor
+V(ego_fdp)[V(ego_fdp)$health_sector == 99]$shape <- "circle" # Institution nicht im Gesundheitssektor
+
+V(ego_spd)[V(ego_spd)$health_sector == 1]$shape <- "square" # Insitution im Gesundheitssektor
+V(ego_spd)[V(ego_spd)$health_sector == 2]$shape <- "circle" # Institution nicht im Gesundheitssektor
+V(ego_spd)[V(ego_spd)$health_sector == 99]$shape <- "circle" # Institution nicht im Gesundheitssektor
+
+plot(
+  ego_cdu,
+     main = "Ego-Netzwerk CDU",
+     sub="82 Knoten",
+     vertex.size=5,
+     layout = layout_with_kk,
+     vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+     vertex.label.cex=c(1.2),
+     vertex.label.dist=-.3,
+     vertex.frame.size=.1,
+)
+
+legend(x=1, # Position auf der X-Achse
+       y=-0.9, # Position auf der Y-Achse
+       legend = type, 
+       col = col_type, # Farbcodierung nach Vector colrs
+       text.col= col_type, # Farbe der Legende in der Farbe des Vectors
+       bty = "n", # verhindert, dass eine Box gezogen wird
+       pch=20, # plotting characters: definiert einen Kreis (siehe ?graphics)
+       pt.cex = 1, # definiert die Textgröße
+       cex = 2, # skaliert die gesamte Legende
+       inset = c(0.1, 0.1) # rückt die Legende leicht ein.
+       )
+
+plot(
+  ego_spd,
+     main = "Ego-Netzwerk SPD",
+     sub="104 Knoten",
+     vertex.size=5,
+     layout = layout_with_kk,
+     vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+     vertex.label.cex=c(1.2),
+     vertex.label.dist=-.3,
+     vertex.frame.size=.1,
+)
+
+legend(x=1, # Position auf der X-Achse
+       y=-0.9, # Position auf der Y-Achse
+       legend = type, 
+       col = col_type, # Farbcodierung nach Vector colrs
+       text.col= col_type, # Farbe der Legende in der Farbe des Vectors
+       bty = "n", # verhindert, dass eine Box gezogen wird
+       pch=20, # plotting characters: definiert einen Kreis (siehe ?graphics)
+       pt.cex = 1, # definiert die Textgröße
+       cex = 2, # skaliert die gesamte Legende
+       inset = c(0.1, 0.1) # rückt die Legende leicht ein.
+       )
+plot(
+  ego_fdp,
+     main = "Ego-Netzwerk FDP",
+     sub="76 Knoten",
+     vertex.size=5,
+     layout = layout_with_kk,
+     vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+     vertex.label.cex=c(1.2),
+     vertex.label.dist=-.3,
+     vertex.frame.size=.1,
+)
+
+legend(x=1, # Position auf der X-Achse
+       y=-0.9, # Position auf der Y-Achse
+       legend = type, 
+       col = col_type, # Farbcodierung nach Vector colrs
+       text.col= col_type, # Farbe der Legende in der Farbe des Vectors
+       bty = "n", # verhindert, dass eine Box gezogen wird
+       pch=20, # plotting characters: definiert einen Kreis (siehe ?graphics)
+       pt.cex = 1, # definiert die Textgröße
+       cex = 2, # skaliert die gesamte Legende
+       inset = c(0.1, 0.1) # rückt die Legende leicht ein.
+       )
+
+```
+Mit 104 Knoten im Netzwerk führt die SPD die Parteien mit den meisten Verbindungen an. Die SPD hat viele Beziehungen zu Vereinen und Organisationen. Bei der FDP sind viele Beziehungen zu Unternehmen zu erkennen (19), gefolgt von der CDU (12) und Schlusslicht SPD mit 9 Verbindungen zu Unternehmen.
+
+## 5.3. Bildungsherkunft der MitgliederInnen des Bundesgesundheitsministeriums
+
+Zuletzt interessiert uns die Vielfalt der Bildungshintergründe der MitgliederInnen des Bundesgesundheitsministeriums.
+Im Codebuch wurde hierfür das Vertex-Attribut [education_background] erhoben.
+
+Kategorie der Berufsausbildung [education_background]:
+1 = Wirtschaft
+2 = Politik
+3 = Medizin
+4 = Soziales
+5 = Sonstiges (Jura, Journalismus/Kommunikation, ...)
+
+```{r Egograph Bildungsherkunft der MitgliederInnen des BMG, fig.height=8, fig.width=14}
+
+el <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+edgematrix <-as.matrix(el)
+bmg <- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=F)
+
+# Wir möchten nun das Ego-Netzwerk des Knotens mit den meisten Verbindungen anzeigen lassen
+V(bmg)$egos <- ego_size(bmg)
+
+# Lässt nur eine Verbindung pro Knoten anzeigen
+bmg_simplify <-delete.edges(bmg,E(bmg)[which_multiple(bmg, eids = E(bmg))])
+# Erzeugt ein Ego-Netzwerk
+ego <- make_ego_graph( bmg_simplify,order = 1,nodes = V(bmg_simplify)$name == "bmg", mode = "all")
+ego_bmg <- ego[[1]]
+
+# Einfärben der Knoten nach dem Vertex-Attribut education_background
+col_type <- c("yellow4", "red", "lightblue", "orange","grey")
+type <- c("Wirtschaft", "Politik", "Medizin", "Soziales", "Sonstiges")
+V(ego_bmg)$color <- col_type[V(ego_bmg)$education_background]
+
+plot(
+  ego_bmg,
+     main = "Bildungsherkunft der MitgliederInnen des Bundesgesundheitsministeriums",
+     vertex.size=10,
+     layout = layout_with_kk,
+     vertex.label.family = "Helvetica",
+     vertex.label.color = "black",
+     vertex.label.cex=c(2),
+     vertex.label.dist=-.3,
+     vertex.frame.size=.1,
+)
+legend(x=1, # Position auf der X-Achse
+       y=-1, # Position auf der Y-Achse
+       legend = type,
+       col = col_type, # Farbcodierung nach Vector colrs
+       text.col= col_type, # Farbe der Legende in der Farbe des Vectors
+       bty = "n", # verhindert, dass eine Box gezogen wird
+       pch=20, # plotting characters: definiert einen Kreis (siehe ?graphics)
+       pt.cex = 1, # definiert die Textgröße
+       cex = 1.8, # skaliert die gesamte Legende
+       inset = c(0.1, 0.1) # rückt die Legende leicht ein.
+       )
+
+```
+Es besteht ein leichter Überhang aus MitgliederInnen, die aus der Wirtschaft kommen (8), jedoch scheinen die MitgliederInnen eine recht diverse Bildungsherkunft zu haben. Was allerdings auffällt: Nur drei der MitgliederInnen haben einen medizinischen Bildungshintergrund!
+
+# 6. Finale Visualisierung: Gesamtnetzwerk
+
+```{r Erstellen eines tidygraph}
+
+library(igraph)
+library(tidygraph)
+library(ggraph)
+
+# Einlesen Datensatz
+edges <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+
+# Erstellen des tidygraph-Objekts
+bmg <- tbl_graph(nodes,edges)
+bmg
+
+# Prüfen, ob ein tidygraph-Objekt vorliegt
+is.tbl_graph(bmg)
+
+# Aktivieren der Edge- und Nodelist
+bmg %>% activate(edges) %>% as_tibble()
+bmg %>% activate(nodes) %>% as_tibble()
+
+# from tidygraph to igraph
+bmg1 <- as.igraph(bmg)
+bmg1
+```
+
+```{r Finale Visualisierung Gesamtnetzwerk, fig.height=10, fig.width=13}
+
+# Einlesen Datensatz
+edges <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/edgelist_bmg.csv", header=T, as.is=T, sep = ",")
+nodes <- read.csv("https://raw.githubusercontent.com/Netzwerke-Pharma/Datensatz-gesamt/main/nodelist_bmg.csv", header=T, as.is=T, sep = ",")
+
+# Erstellen des tidygraph-Objekts
+bmg <- tbl_graph(nodes,edges)
+bmg
+
+# Prüfen, ob ein tidygraph-Objekt vorliegt
+is.tbl_graph(bmg)
+
+# Aktivieren der Edge- und Nodelist
+bmg %>% activate(edges) %>% as_tibble()
+bmg %>% activate(nodes) %>% as_tibble()
+
+# from tidygraph to igraph
+bmg1 <- as.igraph(bmg)
+bmg1
+
+
+# Visualisierungsvorgaben 
+
+# Knoten im Gesundheitssektor nach Form verändern
+V(bmg1)[V(bmg1)$health_sector == 1]$shape <- "square" 
+V(bmg1)[V(bmg1)$health_sector == 2]$shape <- "circle" 
+V(bmg1)[V(bmg1)$health_sector == 99]$shape <- "circle"
+V(bmg1)[V(bmg1)$id == "bmg"]$shape <- "vrectangle"
+
+# Farbe für Gesundheitssektor verändern
+V(bmg1)[V(bmg1)$health_sector== 1]$color <- "darkslategray1" 
+V(bmg1)[V(bmg1)$health_sector== 2]$color <- "grey80"
+
+# MitgliederInnen des BMG nach Parteien einfärben
+V(bmg1)[V(bmg1)$party == 1]$color <- "grey40" # CDU
+V(bmg1)[V(bmg1)$party == 2]$color <- "red" # SPD
+V(bmg1)[V(bmg1)$party == 5]$color <- "yellow" # FDP
+V(bmg1)[V(bmg1)$id == "bmg"]$color <- "yellowgreen"
+
+# Vertex-Frame nach BundesgesundheitsministerInnen
+V(bmg1)[V(bmg1)$function. == 1]$frame.color <- "darkorchid1" # Minister
+V(bmg1)[V(bmg1)$function. != 1]$frame.color <- "transparent" # FDP
+
+# Dicke der Knoten nach Degree-Wert
+ds <- degree(bmg1, normalized = T)
+ds
+
+# Dicke der Kanten nach dem Attribut "duration"
+# Den Kanten mit 99 wird der Wert 1 zugeordnet
+E(bmg1)[E(bmg1)$duration == 99]$duration <- 0.5
+E(bmg1)$duration
+
+plot(bmg1,
+     rescale=TRUE,
+     asp=0.7,
+     layout=layout_with_fr,
+     vertex.label.cex=ifelse(V(bmg1)$type ==1, 1, 0.001),
+     vertex.label.family = "Helvetica",
+     vertex.label.color= "black",
+     vertex.size=ifelse(V(bmg1)$type ==1, degree(bmg1)/2, 3),
+     edge.arrow.size=0.1,
+     edge.curved=.1,
+     main="Finale Visualisierung: Gesamtnetzwerk",
+     sub="MitgliederInnen des BMG nach Parteifarben, Institutionen im Gesundheitssektor: quadratisch und blau, BundesgesundheitsministerInnen mit lila Frame",
+     )
+```
+
+# 7. Zentrale Erkenntnisse
+
+Im Folgenden wird zunächst auf die allgemeinen Netzwerkdaten und Maße unseres Gesamtnetzwerks eingegangen. Es folgen die zentralen Erkenntnisse, die sich an den Arbeitshypothesen aus Kapitel 1.2. orientieren. Abschließend werden weitere zusätzliche Erkenntnisse festgehalten.
+
+## Allgemeine Netzwerkdaten und Maße
+Das Bundesgesundheitsministerium (BMG) steht bei unserer Forschung im Mittelpunkt. Bei den MitgliederInnen des BMG haben wir durch das Attribut „function” in die jeweiligen BundesgesundheitsministerInnen, StaatssekretärInnen, Drogenbeauftragte und Sonstige der einzelnen Legislaturperioden unterschieden. Hierbei wurden 257 Knoten erhoben, welche im Gesamtnetzwerk insgesamt 305 Beziehungen aufweisen.
+
+Zunächst fällt auf, dass die Dichte des Gesamtnetz mit 0,009 sehr gering ist. Das bedeutet, dass insgesamt nur 0,9 % der Beziehungen zwischen den Knoten realisiert sind. Die AkteurInnen stehen also sehr selten untereinander in Verbindung. Unter den MitgliederInnen des BMG nimmt Sabine Bätzing (SPD) im Gesamtnetzwerk die Broker-Funktion ein. Über ihren Knoten können also am kürzesten Verbindungen zwischen AkteurInnen hergestellt werden. Somit weist sie eine hohe Zentralität auf und hat eine gute Kontrolle über die Verbindungen unter den Alteri. Sie nimmt damit eine hohe soziale Stellung im Netzwerk ein.
+
+Die Dichte des Teilnetzwerks „Gesundheitssektor" beträgt 2,29 %. Sie ist also mehr als doppelt so hoch wie die Dichte des Gesamtnetzwerks. 
+
+a) Das Teilnetzwerk „Gesundheitssektor” besteht aus 93 Knoten mit 98 Beziehungen. Von den 257 Knoten des Gesamtnetzwerks sind also 36 % dem Gesundheitssektor zuzuordnen. Diese 93 Knoten teilen sich auf 25 MitgliederInnen und 68 Organisationen auf. Das heißt, dass die 25 MitgliederInnen des Bundesgesundheitsministeriums mit 68 Organisationen im Gesundheitssektor in Verbindung stehen oder standen. Die Recherche hat aber auch ergeben, dass nicht alle MitgliederInnen Verbindungen zum Gesundheitssektor aufweisen. 
+
+b) Insgesamt bestanden oder bestehen drei Verbindungen zu Pharmakonzernen: Zwischen Thomas Gebhart und BASF, Philipp Rösler und der Pure Holding AG sowie zwischen Jens Spahn und der MEDA Pharma GmbH & Co. KG.
+Thomas Gebhart war von 2002 bis 2003 Angestellter der BASF Aktiengesellschaft (Bundestag, 2020). Philipp Rösler sitzt im Verwaltungsrat der schweizer Aktiengesellschaft Pure Holding AG und Jens Spahn erhielt von der MEDA Pharma GmbH & Co. KG im Jahr 2014 einmalig mehr als 3.500 Euro für eine Moderation über die Arzneimittelversorgung (Lobbyradar, 2015).
+
+c) Besonders die Bundesgesundheitsminister Rösler, Spahn und Bahr haben auffällige Verbindungen in den Gesundheitssektor.
+Philipp Rösler hat insgesamt 24 Beziehungen zu Organisationen, Vereinen, Stiftungen, politischen Institutionen und Unternehmen. Auffallend ist auch, dass er insgesamt acht Verbindungen zu Knoten hat, die dem Gesundheitssektor angehören. Drei dieser Verbindungen sind derzeit aktiv. Unter den Beziehungen zum Gesundheitssektor sind zudem drei Beziehungen zu Stiftungen erkennbar: Der Bertelsmann Stiftung, der Robert-Enke-Stiftung und der Hainan Cihang Charity Foundation. Seit 2018 ist er Mitglied des Kuratoriums der Bertelsmann Stiftung.
+Die Bertelsmann Stiftung hat 2015 zwischen 3,7 und 3,9 Millionen Euro für Lobbyarbeit ausgegeben. Zudem konnte die Stiftung eine leitende Mitarbeiterin im Zeitraum vom 26.02.2007 bis zum 15.08.2007 in das Gesundheitsministerium entsenden, wo diese beispielsweise Redeentwürfe verfasste (Lobbypedia, 2020). Die Hainan Cihang Charity Foundation gehört zu dem umstrittenen chinesischen Konzern HNA. Die Stiftung ist der größte Aktionär des Konzerns (Busse & Giesen, 2017). Auch zu dem Pharmakonzern Pure Holding AG gibt es eine Verbindung. Philipp Rösler sitzt im Verwaltungsrat der schweitzer Aktiengesellschaft, welche sich auf Züchtung, Produktion, Verarbeitung, Pharma und Distribution von Cannabis spezialisiert hat (Handelszeitung, 2020). Zudem hat er eine Verbindung zum Bundeswehrkrankenhaus Hamburg, welches unter dem Attribut „health category” zu Kliniken und Krankenhäusern zugeordnet werden konnte. Die Siemens Healthineers AG gehört wiederum zu Medizintechnik-Herstellern. Zusammenfassend kann gesagt werden, dass Philipp Rösler sehr breite Verbindungen zu verschiedenen Bereichen im Gesundheitssektor besitzt. Ein Grund hierfür kann sein Hauptamt als Bundesgesundheitsminister sein.
+
+Jens Spahn unterhält während seiner aktuellen Amtszeit zwei aktive Verbindungen zum Gesundheitssektor. Zum einen zur Jugend gegen Aids e.V. und der Stiftung Humanitäre Hilfe für durch Blutprodukte HIV-infizierte Personen. Spahn geriet durch seine Verbindungen in die Gesundheitsindustrie bereits als Bundestagsabgeordneter in Kritik (Abgeordnetenwatch, o. J.).  Zwischen 2006 und 2010 beteiligte sich Spahn in Form einer Gesellschaft bürgerlichen Rechts (GbR) an der Lobbyagentur Politas, die in erster Linie KundInnen aus dem Gesundheitssektor aufweist. Publik wurde diese Verbindung erst im Jahr 2012, denn aufgrund seiner Minderheitsbeteiligung war er nie verpflichtet, seine Beteiligung dem Bundestag zu melden (Lobbypedia, o. J.). Auch für seine Treffen mit Lobbyorganisationen der ApothekerInnen stand Spahn in der Kritik (Focus Online, 2019). Dementsprechend kann auch bei Jens Spahn festgehalten werden, dass er mit vielseitigen AkteurInnen aus dem Gesundheitssektor in Verbindung stand beziehungsweise steht. Jedoch ist die Anzahl der aktiven Verbindungen seit seiner Amtszeit als Bundesgesundheitsminister zurückgegangen. Bei Spahns Stellungnahme zu den Lobbyismus-Vorwürfen betont er, dass er nach seiner Wahl zum gesundheitspolitischen Sprecher seine Tätigkeit für Politas stillgelegt habe. Trotzdem habe er die öffentliche Wirkung seines Tuns unterschätzt und würde heute anders handeln (Lobbycontrol, 2012).
+
+Doch auch 2019 werden erneut kritische Stimmen – unter anderem von der Nichtregierungsorganisation Transparency International – laut, als Spahn Markus Leyck Dieken zum Geschäftsführer von gematik ernannte. Dieken ist seit über 20 Jahren in der Pharmaindustrie tätig und hatte bereits Führungspositionen der Konzerne Shionogi, Ratiopharm und Novartis inne (Rohrer, 2019; Dieken, o. J.). Da das Bundesgesundheitsministerium 51 % der Geschäftsanteile von gematik hält,  ist hier eine Nähe zwischen Jens Spahn zur Pharmaindustrie erkennbar (Rohrer, 2019).
+
+Auch Daniel Bahr unterhält bis heute drei aktive Verbindungen zum Gesundheitssektor. Auffallend ist hier der Knoten Allianz Private Versicherungen, durch welchen Daniel Bahr bereits in den Medien kritisiert wurde. Ein Jahr nach seinem Amt als Bundesgesundheitsminister wurde Bahr Bevollmächtigter für die Privatversicherung bei der Allianz-Versicherung. Somit wechselte er in kürzester Zeit von der Politik in die Wirtschaft. Bahr erwähnte, dass der Wechsel aufgrund seines Bildungsweges und seinem Engagement im Gesundheitswesen in den vorigen Jahren nichts Überraschendes ist. Er hat das Studium der Gesundheitsökonomie absolviert und war zudem seit Jahren Ansprechpartner für Gesundheitsthemen bei der FDP, die sich programmatisch für Privatkassen einsetzt (Birnbaum & Haselberger, 2014). 
+
+d) Der Blick auf die drei MitgliederInnen, die über die höchsten Degree-Werte verfügen, zeigt klare Differenzen. Es fällt auf, dass Sabine Bätzing (SPD) trotz insgesamt 42 Verbindungen keine Beziehung zu einem Unternehmen hat, Helga Kühn-Mengel (SPD) von 28 Verbindungen nur eine Kante zu einem Unternehmen vorweist, während bei Philipp Rösler (FDP) von 24 Verbindungen sieben Kanten zu verschiedenen Unternehmen führen. Dieser Vergleich zeigt, dass obwohl Bätzing und Kühn-Mengel bei der Anzahl der Kanten führend sind, ihre Verbindungen hauptsächlich zu Stiftungen, politischen Institutionen sowie Vereinen und Organisationen führen, während bei Rösler der Einfluss der Unternehmen an der Anzahl der Verbindungen gesehen höher sein dürfte. Auf der anderen Seite dürfte sowohl bei Bätzing als auch bei Kühn-Mengel der Einfluss von Vereinen und Organisationen deutlich höher ausfallen als bei Rösler. Die Untersuchung zeigt, dass Bätzing hier über 28 Verbindungen verfügt und Kühn-Mengel über 16. Rösler dagegen weist nur fünf Pfade zu Vereinen und Organisationen auf. Ein besonderes Merkmal sind die Verbindungen der drei PolitikerInnen zu Vereinen, Organisationen, politischen Institutionen und Stiftungen, die dem Gesundheitssektor zugehörig sind. Hier verfügen alle drei PolitikerInnen über jeweils neun Verbindungen. 
+
+e) Die These, dass die BundesgesundheitsministerInnen die Knoten mit den meisten Verbindungen sind, wurde widerlegt. Philipp Rösler ist der Bundesgesundheitsminister mit den meisten Verbindungen, liegt aber, wie in c) aufgeführt, insgesamt nur auf Platz drei. Sabine Bätzing hat mit 42 Verbindungen die meisten Verbindungen.
+
+f) Eine weitere zentrale Aussage der Forschung ist, dass die MitgliederInnen des BMG, anders als zunächst vermutet, kaum gemeinsame Verbindungen zu Organisationen im Gesundheitssektor haben oder hatten. Ausgenommen sind hierbei Jens Spahn und Daniel Bahr, welche eine gemeinsame Verbindung zu Jugend gegen Aids e.V. haben, sowie Ulla Schmidt und Helga Kühn-Mengel, die beide mit der Lebenshilfe e.V. in Verbindung stehen. Daraus wird deutlich, dass der mögliche Einfluss von Organisationen eng mit den jeweiligen Personen zusammenhängt und nicht etwa mit dem Bundesgesundheitsministerium, den politischen Positionen oder der Parteizugehörigkeit.
+Anhand der In-Degree-Werte ist erkennbar, dass sich relativ wenige gemeinsame Verbindungen finden lassen. So standen fünf der 25 MitgliederInnen des BMG in Verbindung zum Gesundheitsausschuss und vier zur Bürgerinitiative Europa-Union Deutschland e.V. Sowohl Philipp Rösler als auch Daniel Bahr haben eine Verbindung zum Weltwirtschaftsforum. Eine gemeinsame Verbindung zur Dienstleistungsgewerkschaft Verdi teilen sich Helga Kühn-Mengel und Sabine Bätzing. Diese Aussage lässt sich durch die geringe Dichte des Gesamtnetzwerks untermauern.
+
+g) Im Vergleich der drei Parteien, denen die MitgliederInnen des BMG der jeweiligen Legislaturperioden zuzuordnen sind, führt die SPD mit 104 Knoten die Liste der meisten Verbindungen an. Die CDU steht mit 82 Knoten auf Platz zwei, die FDP mit 76 Knoten auf Platz drei. Die Sozialdemokraten haben besonders viele Beziehungen zu Vereinen und Organisationen, während das Bild bei Unternehmen ganz anders aussieht. Hier führt die FDP gefolgt von der CDU und dem Schlusslicht SPD, die hier im Vergleich zu den freien Liberalen nur die Hälfte an Verbindungen aufweist. Die der FDP oft nachgesagte Nähe zu Unternehmen wird zumindest hier durchaus bestätigt, ebenso die Nähe der SPD zu Vereinen und Organisationen. 
+
+h) In einem der Ego-Netzwerke haben wir die MitgliederInnen des Bundesgesundheitsministeriums ihrer Bildungsherkunft zugeordnet. Hierbei haben wir in die Kategorien Wirtschaft, Politik, Medizin, Soziales und Sonstiges eingeteilt. Überraschend ist, dass nur drei MitgliederInnen aus einem Bereich der Medizin kommen. Die Mehrheit, mit insgesamt acht AkteurInnen, hat einen Bildungshintergrund im Wirtschaftsbereich. Insgesamt zeigt sich, dass der Bildungshintergrund der MitgliederInnen sehr divers ist.
+
+## Weitere Erkenntnisse
+Im Vergleich der Legislaturperioden lässt sich weiter feststellen, dass die MitgliederInnen des BMG der früheren Legislaturperioden deutlich mehr Verbindungen hatten beziehungsweise haben, als die der aktuellen. Während sich bei den MitgliederInnen der ersten Legislaturperiode (2005-2009) 104 Knoten finden, sind es bei der aktuellen Legislaturperiode (2017-2021) nur 43 Knoten. Diesem Vergleich ist allerdings keine allzu große Bedeutung zuzuordnen, da die Anzahl der Verbindungen entsprechend der Dauer der politischen Laufbahn steigen kann und nicht ersichtlich ist, wie lange die einzelnen MitgliederInnen schon in der Politik tätig waren beziehungsweise sind. In der aktuellen Legislaturperiode finden sich derzeit insgesamt 17 Verbindungen im Bereich des Gesundheitssektors.
+
+# 8. Fazit, Limitationen und Ausblick
+
+## 8.1. Fazit
+
+Das Bundesgesundheitsministerium steht im Jahr 2020 durch die Covid-19-Pandemie besonders im Fokus der Öffentlichkeit (Bundesgesundheitsministerium, 2020). Für eine Untersuchung der diversen Verbindungen des Gesundheitsministeriums war die Netzwerkanalyse sehr gut geeignet. Anhand einer ausführlichen Recherche, dem theoretischen Rahmen sowie der analytischen Ausarbeitung in RStudio konnten in dieser Arbeit viele aussagekräftige Verbindungen und Rückschlüsse gefunden werden. Dadurch kann diese Forschung zur Transparenz im Politikbereich beitragen, gerade da es (noch) kein verpflichtendes Lobbyregister gibt.
+
+Die aufgestellten Thesen wurden zum Teil bestätigt, zum Teil aber auch deutlich widerlegt. So ist durch diese Arbeit belegt, dass insgesamt 68 Organisationen aus dem Gesundheitssektor mit verantwortlichen MitgliederInnen aus dem Bundesgesundheitsministerium in Verbindung standen beziehungsweise stehen. Auf der anderen Seite gibt es aber PolitikerInnen, die keine derartige Verbindung vorzuweisen haben. Durch die Recherche und analytischen Arbeiten lenkte sich der Fokus schlussendlich insbesondere auf drei Bundesgesundheitsminister, die auffällige Verbindungen in den Gesundheitssektor hatten beziehungsweise haben: Philipp Rösler, Daniel Bahr und der aktuelle Bundesgesundheitsminister Jens Spahn. Ihnen konnten in dieser Forschungsarbeit sehr enge, teils auch scharf kritisierte Verflechtungen mit der Pharmaindustrie beziehungsweise Pharmalobby nachgewiesen werden. Zu Beginn der Forschung stand, anhand der Verantwortung gemessen, die Vermutung im Raum, dass die Bundesgesundheitsminister aufgrund des großen politischen Einflusses ihrer Position möglicherweise auch die meisten Verbindungen aufweisen würden. Diese Vermutung ist eindrucksvoll widerlegt worden, da es mit Sabine Bätzing eine SPD-Politikerin auf 42 Verbindungen brachte. Philipp Rösler, als erster Bundesgesundheitsminister in dieser Reihenfolge, steht hier mit etwa der Hälfte der Verbindungen (24) nur auf Platz drei. Auch der besonders starke Einfluss einzelner Unternehmen gemessen an der Anzahl von Verbindungen konnte nicht nachgewiesen werden. Im Gegenteil: Unter den MitgliederInnen des Bundesgesundheitsministeriums gibt es neben dem Gesundheitsausschuss ausschließlich bei zwei Organisationen (Jugend gegen Aids e.V. und Lebenshilfe e.V.) eine gemeinsame Verbindung. Bei der Untersuchung der Parteien zeigte sich, dass besonders die SPD-PolitikerInnen über viele Kanten verfügen und FDP-PolitikerInnen besonders Unternehmen nahestehen.
+Die genaue Auseinandersetzung mit dem Bildungshintergrund zeigt, dass wider Erwarten nur drei MitgliederInnen des Bundesgesundheitsministeriums aus dem Bereich der Medizin kommen; während der Vergleich der Legislaturperioden keine allzu verlässlichen, eindeutigen Aussagen zulässt.
+
+Zusammenfassend lässt sich festhalten, dass die Forschungsarbeit anhand der Netzwerkanalyse in diesem Bereich wirkungsvoll eingesetzt werden und praktische reale Verbindungen aufdecken konnte, die anderweitig so nicht sichtbar waren. Die Netzwerkanalyse hätte darüber hinaus bei besserer Datenlage und einem noch breiter aufgestellten Forschungsteam auch über diese Arbeit hinweg noch weitere Aussagen treffen können.
+
+## 8.2. Limitationen
+
+Die Forschungsarbeit stößt in einzelnen Bereichen an Grenzen und kann in mancher Hinsicht keine vollständige Aussage herbeiführen. Dies liegt am Forschungsfeld, den Zugängen sowie an fehlenden Anhaltspunkten für vollständige Interpretationen.
+
+Die Untersuchung zeigt sämtliche erfasste Verbindungen zwischen den PolitikerInnen und den Institutionen beziehungsweise Organisationen. Inwiefern die Wirkungen dieser Verbindungen allerdings ausfallen, lässt sich nur eingegrenzt festhalten, da das erfasste Gesamtnetzwerk sowie die Teilnetzwerke ungerichtete Netzwerke sind.
+Durch die erfassten Tätigkeiten und Verbindungen wird auch dargestellt, wann Geld, beispielsweise im Sinne von einmalig entgeltlichen Tätigkeiten, zwischen den AkteurInnen geflossen ist. Welche exakten finanziellen Zahlungen empfangen wurden, kann diese Arbeit aufgrund fehlender Datenlage allerdings nicht darstellen.
+
+Ebenso offen bleibt, welche genauen Auswirkungen die erfassten Verbindungen mit sich gebracht haben oder auch aktuell noch mit sich bringen. So kann nicht erfasst werden, wie sich etwa PolitikerInnen tatsächlich von deren Ehrenamt, Nebentätigkeit oder Mitgliedschaft in ihrer politischen Arbeit haben beeinflussen lassen.
+
+Die Datenlage zu den momentan bestehenden Verbindungen der aktuellen MitgliederInnen des Bundesgesundheitsministeriums ist relativ vollständig. Bei der Untersuchung und bei den Recherchen zu vergangenen Legislaturperioden stellt sich dies einstweilen anders dar. So sind beispielsweise einzelne Internetseiten nicht mehr online, die Quellen veraltet oder schlicht unvollständig. Dies führt unter anderem dazu, dass es in Einzelfällen nicht möglich ist, das Ende einer Verbindung festzustellen. Dadurch besteht hier eine weitere Limitation der Arbeit, da keine verlässliche Aussage über die Dauer aller Beziehungen getroffen werden kann und so keine aussagekräftigen Vergleiche gezogen werden können.
+
+## 8.3. Ausblick
+
+Um geheimes Lobbying öffentlich sichtbar und transparent zu gestalten, hat abgeordnetenwatch.de eine Petition für ein verpflichtendes Lobbyregister in Deutschland gestartet. Sie kritisieren den bisherigen Gesetzentwurf für ein Lobbyregister der Bundesregierung, da dieser erhebliche Mängel aufweist (Abgeordnetenwatch, 2020).
+
+Mit dem entsprechenden neuen Gesetzentwurf befasste sich am 11. September diesen Jahres erstmals der Bundestag.
+Hauptforderung dieses Entwurfs: Es solle eine Registrierungspflicht, also eine Art Lobbyregister geben. Zudem beinhaltet der Gesetzestext, dass Interessenvertreter einen Verhaltenskodex beachten müssen, welcher auch öffentliche Rügeverfahren bei Verstößen vorsieht. Auch die AfD-Fraktion brachte einen Entwurf zur Registrierung von Lobbyisten, Nichtregierungsorganisationen und Lobbydienstleistern ein. Es solle eine sogenannte „legislative Fußspur“ geben, durch welche auf Gesetzesentwürfen gekennzeichnet werden soll, welche Lobbyisten und externen Berater an dem jeweiligen Entwurf beteiligt waren.
+
+Sowohl der Entwurf der Fraktionen CDU/CSU und SPD als auch der Entwurf der AfD-Fraktion wurden an den Ausschuss für Wahlprüfung, Immunität und Geschäftsordnung überwiesen (Bundestag, 2020).
+
+# 9. Team, Arbeitsaufwand und Lessons Learned
+
+## 9.1. Teamreflexion
+
+Unser Team fand sich bereits zu Beginn der Themenfindung für dieses Forschungsprojekt schnell zusammen. Jede/r brachte eigenes Interesse am Thema mit und die Relevanz von Netzwerken in Verbindung mit der Pharmaindustrie insbesondere im Hinblick auf die aktuelle Corona-Pandemie wurde schnell sichtbar. Aufgrund unserer ähnlichen Interessen und gemeinsamen Motivation bezüglich des Themas ergänzten wir uns gut und konnten uns zeitnah auf ein stimmiges Forschungsdesign einigen. Bei der Erstellung des Codebuchs war es etwas schwieriger, sich auf passende Variablen festzulegen. Da uns bewusst war, wie wichtig eine klare Definition und ein logischer Aufbau hinsichtlich der Forschungsfrage ist, nutzten wir ausgiebige Gruppenmeetings und vereinbarten einen Jour Fix, um alle offenen Fragen zu klären und möglichst problemlos in die Datenerhebung starten zu können. Dabei war das Feedback jedes Teammitglieds immer hilfreich und wurde gern gehört. Außerdem konnten wir feststellen, dass die unterschiedlichen Persönlichkeitstypen innerhalb des Teams von Vorteil waren. Jeder hat eigene Stärken und Schwächen, von denen die gemeinsame Arbeit profitieren kann. So halten sich einige in Gruppendiskussionen zwar eher etwas zurück, dafür erledigen sie andere Aufgaben aber wiederum präziser. Dadurch wurde sichtbar, dass Diversität in Gruppenarbeiten hilfreich sein kann.
+
+Da wir vier Legislaturperioden untersuchen, hielten wir es für notwendig, die doch recht umfangreiche Recherche fair untereinander aufzuteilen. So gab es zwei Untergruppen, die jeweils zwei Legislaturperioden erfassten. Bei Fragen oder Unklarheiten konnte man dennoch auf die Unterstützung des restlichen Teams zählen. Trotz dessen, dass die Datenerhebung während der Semesterferien stattfand, war auf die Erledigung der Aufgaben eines jeden Verlass und auch die intern gesetzten Deadlines wurden eingehalten. Dies ermöglichte dem ganzen Team eine selbstständige Aufteilung des Workloads und somit den Freiraum für Urlaub oder Freizeitaktivitäten. Uns war immer klar, dass jede/r Verantwortung für die Teamarbeit trägt, aber auch selbstständig für die gewissenhafte Erledigung ihrer/seiner Aufgaben zuständig ist.
+
+Etwas frustrierend wurde es, als wir feststellen mussten, dass trotz sauberer Datenerhebung und eines präzisen Codebuchs Fehler in der Edge- und Nodelist auftraten. Teils doppelten sich ID-Angaben oder es gab Unstimmigkeiten bei der Codierung von Beziehungen oder Organisationen. Hier wurde uns die Schwierigkeit bewusst, dass wir mit unterschiedlichen Perspektiven und eigenen subjektiven Einschätzungen an den Daten arbeiten und die Abstimmung im Team gewann erneut an Signifikanz. Als die Datenerhebung abgeschlossen war und es an die Visualisierung ging, erwartete uns die wohl größte Herausforderung: Die gesamten Daten wurden als character und nicht numerisch erkannt. Dies brachte Restriktionen in der Visualisierung mit sich. Doch auch hier konnten Alternativen gefunden werden, wie beispielsweise die Abänderung eines Edge-Attributs in ein Node-Attribut. In unserem Team herrschte in solchen Situationen keine „Weltuntergangsstimmung”, sondern es wurde konstruktiv und optimistisch nach Lösungen gesucht.
+
+Hinzuzufügen ist ebenfalls, dass alle Gruppenmeetings über Zoom abgehalten wurden. Hier konnten wir feststellen, dass die Konzentration teils schneller nachließ und es vor allem für das Programmieren leichter gewesen wäre, wenn man sich in Präsenz hätte treffen können - denn stürzte das Programm einmal ab, konnte man nicht einfach in den nächsten Laptop schauen, sondern musste zunächst die Einstellungen bei Zoom ändern. Dadurch wurden die Meetings teilweise länger als ursprünglich geplant. Des Weiteren kam es durch die Online-Meetings zu zeitlichen Verzögerungen beim Sprechen, was die Kommunikation etwas erschwerte. Unsere unterschiedlichen Perspektiven, gerade auch auf Schwerpunkte bei der Visualisierung bezogen, führten einerseits zwar zu konstruktiven Diskussionen, ließen die Meetings andererseits aber auch etwas chaotisch werden. Hier galt es eine Balance zu finden, was uns mal mehr, mal weniger gut gelang.
+
+Letztlich war es für uns dennoch eine sehr positive und produktive Teamarbeit, in der sich gegenseitig unterstützt und ermutigt wurde. Der Umgang war jederzeit respektvoll und es kam an keiner Stelle zu Konflikten, da diese vor ihrer möglichen Entstehung bereits durch funktionierende Kommunikation gelöst werden konnten.
+
+## 9.2. Lessons Learned
+
+Durch die zwei großen semesterübergreifenden Forschungsprojekte war uns klar, dass eine gute Organisation im Team essenziell ist. Dementsprechend versuchten wir bereits in den ersten Meetings einen guten Zeitplan zu erstellen, uns ein klares Konzept und eine Struktur zu überlegen. Auch an dieser Stelle wurde die Komplexität des Organisierens deutlich, denn es galt einen stabilen Plan zu erstellen und doch gleichzeitig agil und offen für spontane Änderungen zu bleiben. Gerade in Sachen Zeitmanagement konnte die Gruppe Einiges dazulernen. Wir bemerkten, wie wichtig es ist, Zeitpuffer einzuplanen. Sollte etwas nicht nach Plan laufen konnten wir uns bereits im Vorfeld mental darauf einstellen, denn einige Variablen, wie technische Probleme bei RStudio, konnten wir nicht kontrollieren. Dementsprechend half es, Eventualitäten abzuwägen und in die Planung miteinzubeziehen.
+
+Zusätzlich wurde es wichtig, zu lernen, wie die Gruppe und jede/r Einzelne mit Frustrationen umgeht. Vor allem als wir dachten, dass bei unserer Edge- und Nodelist keine Fehler mehr auftreten würden, wurde uns häufig das Gegenteil bewiesen. Dabei konnten wir nicht nur unsere Frustrationstoleranz erproben, sondern auch lernen, mit Unerwartbarem umzugehen und trotzdem das Ziel nicht aus den Augen zu verlieren. Eine weitere Lesson Learned war die Konzentration auf das Wesentliche. In einigen Meetings konnten wir feststellen, dass wir zu lange über Themen sprachen, die uns dem Ziel unserer Forschung nicht näher brachten. Hier war es hilfreich eine Sensibilität dafür zu entwickeln, was Priorität hat und wann der richtige Zeitpunkt ist, den Fokus wieder auf andere Themen zu lenken. Gleichzeitig wurde uns bewusst, wie signifikant sauberes Vorgehen bei der Erhebung und Auswertung von Daten ist.
+
+Speziell wenn es darum geht empirisch zu forschen, könnten zunächst als nichtig wahrgenommene Fehler das Gesamtergebnis verfälschen. Dies ist vor allem in Bezug auf investigative Arbeiten kritisch, denn so könnte man Personen oder Organisationen fälschlicherweise „an den Pranger stellen”. An dieser Stelle realisierten wir auch, welche Verantwortung ForscherInnen tragen. Auf der einen Seite gegenüber dem Team, aber auch gegenüber dem Forschungsgegenstand, den erforschten AkteurInnen und der Gesellschaft. 
+
+# 10. Literatur und Anhang  
+
+## 10.1. Literaturverzeichnis
+
+## Wissenschaftliche Quellen
+Baur, N. & Blasius, J. (2014). Handbuch Methoden der empirischen Sozialforschung.
+
+Hennig, M. (2010). Soziales Kapital und seine Funktionsweise. In C. Stegbauer & R. Häußling (Hrsg.), Handbuch Netzwerkforschung (S. 177-189).  https://doi.org/10.1007/978-3-531-92575-2_16
+
+Jańczak J. & Kopka A. (2019). Die Grenze zwischen Politikberatung und Lobbyismus im politischen Entscheidungsprozess – eine empirische Analyse. In A. Kopka, D. Piontek, & M. Minkenberg (Hrsg.), Politikberatung und Lobbyismus im parlamentarischen Entscheidungsprozess: Deutschland und Polen im Vergleich (S. 85-114). https://doi.org/10.1007/978-3-658-27418-4_5
+
+Kopka A., Minkenberg M. & Piontek D. (2019). Politikberatung und Lobbyismus in Deutschland und Polen. In dies. (Hrsg.), Politikberatung und Lobbyismus im parlamentarischen Entscheidungsprozess: Deutschland und Polen im Vergleich (S. 255-268). https://doi.org/10.1007/978-3-658-27418-4_11
+
+Metz, T. (2017). Netzwerkanalyse. In S. Jäckle (Hrsg.), Neue Trends in den Sozialwissenschaften: Innovative Techniken für qualitative und quantitative Forschung (S. 203-237). https://doi.org/10.1007/978-3-658-17189-6_8
+
+Mills, C. W. (2000). The Power Elite. https://doi.org/10.1177/009430610603500602
+
+Speth, R. & Zimmer, A. (2015). Lobby Work: Interessenvertretung als Politikgestaltung. Leif, T. & Speth, R. (2006). Die fünfte Gewalt: Lobbyismus in Deutschland.
+
+Stegbauer, C. & Haeussling, R. (2010). Handbuch Netzwerkforschung. https://doi.org/10.1007/978-3-531-92575-2
+
+Strünck, C. (2019). Zwischen Verbandszweck und Mitgliedermotivation: Bedarf für weitere Forschung. In W. Schroeder & M. Schulze (Hrsg.), Wohlfahrtsstaat und Interessenorganisationen im Wandel (S. 239-253). https://doi.org/10.5771/9783845281223
+
+## Internetartikel
+Abgeordnetenwatch. (o. J.). Gesundheitspolitiker Spahn an Lobbyfirma beteiligt. https://www.abgeordnetenwatch.de/blog/lobbyismus/gesundheitspolitiker-spahn-an-lobbyfirma-beteiligt
+
+Abgeordnetenwatch. (o. J.). Petition: Schluss mit geheimem Lobbyismus. https://www.abgeordnetenwatch.de/petitionen/schluss-mit-geheimem-lobbyismus
+
+Bartens, W. (2011, 13. Mai). Weg mit dem Gesundheitsministerium. Süddeutsche Zeitung. https://www.sueddeutsche.de/politik/behoerde-fuer-lobbyisten-weg-mit-dem-gesundheitsministerium-1.1096785
+
+Birnbaum, B. & Haselberger S. (2014, 30. September). Wenn Politiker die Seiten wechseln. Tagesspiegel. https://www.tagesspiegel.de/politik/daniel-bahr-heuert-bei-der-allianz-an-wenn-politiker-die-seiten-wechseln/10776576.html 
+
+Bundesgesundheitsministerium. (2020). Interviews. https://www.bundesgesundheitsministerium.de/presse/interviews/interviews/focus-110920.html
+
+Bundestag. (2020). Koalition und AfD wollen ein Lobbyregister beim Bundestag einführen. https://www.bundestag.de/dokumente/textarchiv/2020/kw37-de-lobbyregister-790632 
+
+Bundestag. (2020). Dr. Thomas Gebhart. https://www.bundestag.de/abgeordnete/biografien/G/gebhart_thomas-519672
+
+Busse, C. & Giesen, C. (2017, 08. November). Der rätselhafte Job des Herrn Rösler. Süddeutsche Zeitung. https://www.sueddeutsche.de/wirtschaft/hna-konzern-der-raetselhafte-job-des-herrn-roesler-1.3740493 
+
+Die Stiftung. (2017). Rösler führt Hainan Cihang Charity Foundation. https://www.die-stiftung.de/personalwechsel/roesler-fuehrt-hainan-cihang-charity-foundation-75220/ 
+
+Focus Online. (2019). Spahn und die Apotheker: Gesetzesvorschlag soll ihnen hunderte Millionen bringen. https://www.focus.de/finanzen/news/millionen-fuer-apotheker-spahn-trifft-sich-elfmal-mit-lobbyisten-heraus-kommt-ein-teurer-gesetzesvorschlag_id_10209872.html
+
+Handelszeitung. (2020). Cannabis-Firma: Ex Spitzenpolitiker Philipp Rösler nimmt weiteren Posten an. https://www.handelszeitung.ch/news/cannabis-firma-ex-spitzenpolitiker-philipp-rosler-nimmt-weiteren-posten 
+
+Hoppe, T. (2009). Transparenz per Gesetz? Zu einem künftigen Lobby-Register. ZRP. http://tilman-hoppe.de/ZRP_2009_39.pdf
+
+Kentrup, S., Hoffjan, A. & Lachmann, M. (2013). Wie betreiben Unternehmen Lobbying? Eine empirische Analyse der Einflussfaktoren, Ausgestaltungsformen und Strategien. Schmalenbachs Zeitschrift für betriebswirtschaftliche Forschung, 65, 342-371. https://doi.org/10.1007/BF03373717
+
+Krüger, U. (2017). Die Nähe zur Macht. MedienJournal, 35(2), 33-49. https://doi.org/10.24989/medienjournal.v35i2.168
+
+Lega Tribune Online. (2017). Im Zentrum der Macht. Einfluss von Verbänden auf die Gesetzgebung. https://www.lto.de/recht/nachrichten/n/studie-lobbyismus-gesetzgebung-ministerien-einfluss-verbaende/
+
+Lehmann, H., Mortsiefer, H., Müller-Neuhof, J., Woratschka, R., Maicher, L., Bartsch, F., Gerega, K., Kiessling, M., Prilop, M. & Vesely, F. (2017, 04. September). Gesetze der Macht: Diese Verbände nehmen am meisten Einfluss auf Gesetze.  Tagesspiegel. https://digitalpresent.tagesspiegel.de/gesetze-der-macht
+
+Linked In. (o. J.) Dr. Med. Markus Leyck Dieken. https://www.linkedin.com/in/dr-med-markus-leyck-dieken-1940ba28/?originalSubdomain=de
+
+Lobbycontrol. (2012, November 29). CDU-Gesundheitsexperte: Brisante Nebeneinkünfte. https://www.lobbycontrol.de/2012/11/cdu-gesundheitsexperte-brisante-nebeneinkunfte/
+
+Lobbypedia. (o. J.). Jens Spahn. https://lobbypedia.de/wiki/Jens_Spahn
+
+Lobbypedia. (2020). Bertelsmann Stiftung. https://lobbypedia.de/wiki/Bertelsmann_stiftung 
+
+Lobbyradar. (2015). Jens Spahn. https://lobbyradar.org/entity/54bd3c8a8b934da063411fa8
+
+Malmendier, U. & Schmidt, K. (2012). You Owe Me. National Bureau of Economic Research. https://doi.org/10.1257/aer.20140890
+
+Müller-Foell, E. & Afanasjew, N. (2018). Starke Wirkung. fluter.de. https://www.fluter.de/der-lobbyismus-der-pharma-industrie
+
+Rohrer, B. (2019, 19. Juni). Spahn erntet Kritik für sein Vorgehen in der Gematik. DAZ.online. https://www.deutsche-apotheker-zeitung.de/news/artikel/2019/06/19/spahn-erntet-kritik-fuer-sein-vorgehen-in-der-gematik
+
+Siemens Healthineers. (2020). Siemens Healthineers Aufsichtsrat. Dr. Philipp Rösler. https://www.corporate.siemens-healthineers.com/de/about/supervisory-board/philipp-roesler 
+
+Simon, P. M. (2015). Lobbyismus in der Gesundheitspolitik. bpb.de. https://www.bpb.de/politik/innenpolitik/gesundheitspolitik/200658/lobbyismus-in-der-gesundheitspolitik.
+
+Thomas Gebhart. (2020). Thomas Gebhart Website. https://thomas-gebhart.de
+
+## 10.2. Internetquellen Datenerhebung
+
+Abgeordnetenwatch. (o. J.). Website von Abgeordnetenwatch. https://www.abgeordnetenwatch.de/
+
+Allianz Deutschland. (2016). Daniel Bahr rückt in den Vorstand auf. https://www.allianzdeutschland.de/daniel-bahr-rueckt-in-den-vorstand-auf/
+
+BMG e.V. (o. J.) Schirmherr Wolfgang Zöller. https://www.bgmev.org/verein/schirmherr/
+
+Bundesgesundheitsministerium. (o. J.). Website des Bundesgesundheitsministeriums. https://www.bundesgesundheitsministerium.de/
+
+Bundesgesundheitsministerium. (2007). Website des Bundesgesundheitsministerium 2007. https://web.archive.org/web/20080103191815/http://www.bundesgesundheitsministerium.de/
+
+Bundesregierung. (o. J.). Annette Widmann-Mauz. https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/annette-widmann-mauz-1432042
+
+Bundesregierung. (o. J.). Annette Widmann-Mauz. https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/annette-widmann-mauz-1432042 
+
+Bundesregierung. (o. J.). Daniel Bahr. https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett/daniel-bahr-422368
+
+Bundestag. (o. J.). Ulla Schmidt. https://www.bundestag.de/abgeordnete/biografien/S/schmidt_ulla-523374
+
+Bundestag. (o. J.). Biografie Annette Widmann-Mauz. https://www.bundestag.de/abgeordnete/biografien/W/widmann_mauz_annette-524580
+
+Bundestag. (2013). Biografie Wolfgang Zöller. 
+http://webarchiv.bundestag.de/archive/2013/1212/bundestag/abgeordnete17/biografien/Z/zoeller_wolfgang.html
+
+Bundestag. (o. J.). Biografie von Prof. Dr. Claudia Schmidtke. https://www.bundestag.de/abgeordnete/biografien/S/523318-523318
+
+Bundestag. (o. J.). Biografie von Annette Widmann-Mauz. https://www.bundestag.de/abgeordnete/biografien/W/widmann_mauz_annette-524580
+
+Bundestag. (o. J.). Biografie Wolfgang Zöller. http://webarchiv.bundestag.de/archive/2013/1212/bundestag/abgeordnete17/biografien/Z/zoeller_wolfgang.html
+
+Bundestag. (o. J.). Biografie Jens Spahn. http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/spahn_jens/258952  
+
+Bundestag. (2020). Aktuelle Fassung der öffentlichen Liste über die Registrierung von Verbänden und deren Verteilern. http://bundestag.de/blob/189476/8989cc5f5f65426215d7e0233704b20a/lobbylisteaktuell-data.pdf 
+
+Caspers Merk. (o. J.). Website von Marion Caspers-Merk. http://www.caspers-merk.de/
+
+CDU. (o. J.). Website der CDU- Partei.https://www.cdu.de/
+
+CDU. (o. J.). Hermann Gröhe. https://www.cdu.de/vorstand/hermann-gr%C3%B6he 
+
+CDU. (o. J.). Karl-Josef Laumann. .https://www.cdu.de/vorstand/karl-josef-laumann 
+
+CDU. (o. J.). Abgeordnete. https://www.cducsu.de/abgeordnete/
+
+CDU. (o. J.). Ingrid Fischbach. https://www.cducsu.de/abgeordnete/ingrid-fischbach 
+
+CDU. (o. J.). Prof. Dr. Claudia Schmidtke. https://www.cducsu.de/abgeordnete/claudia-schmidtke
+
+CDU. (o. J.). Annette Widmann-Mauz. https://www.cducsu.de/abgeordnete/annette-widmann-mauz
+
+CDU. (o. J.). Wolfgang Zöller. https://www.cducsu.de/abgeordnete/wolfgang-zoeller
+
+Claudia Schmidtke. (o. J.). Website von Claudia Schmidtke MdB. http://claudiaschmidtkemdb.de/
+
+Daniel Bahr. (o. J.). Website von Daniel Bahr. http://www.daniel-bahr.de
+
+Daniela Ludwig. (o. J.). Website von Daniela Ludwig. https://www.daniela-ludwig.de/
+
+Diabsite. (2013). DAV-Gesundheitspreis vergeben. https://www.diabsite.de/aktuelles/nachrichten/2013/130315b.html
+
+Drogenbeauftragte. (o. J.). Beauftragte Daniela Ludwig. https://www.drogenbeauftragte.de/beauftragte/
+
+Frankfurter Allgemeine Zeitung. (o. J.). Daniel Bahr. https://www.faz.net/aktuell/politik/thema/daniel-bahr
+
+Heinz Kühn Stiftung (o. J.). Ulrike Flach. http://www.heinz-kuehn-stiftung.de/index.php/ulrike-flach
+
+Helga Kühn-Mengel. (o. J.). Website von Helga Kühn-Mengel. https://helgakuehnmengel.de/#toggle-id-1
+
+Hermann Gröhe. (o. J.). Website von Hermann Gröhe. https://www.hermann-groehe.de/ 
+
+Integrationsbeauftragte. (o. J.). Annette Widmann-Mauz. https://www.integrationsbeauftragte.de/ib-de/amt-und-person/lebenslauf/annette-widmann-mauz-cdu--848618
+
+Jens Spahn. (o. J.). Website von Jens Spahn. https://www.jens-spahn.de/
+
+Karl-Josef Laumann. (o. J.). Website von Karl-Josef Laumann. https://www.karl-josef-laumann.de/
+
+Land NRW. (o. J.). Karl- Josef Laumann. https://www.land.nrw/de/karl-josef-laumann
+
+Landtag RLP. (o. J.). Biografie Sabine Bätzing-Lichtenthäler. https://www.landtag.rlp.de/de/parlament/abgeordnete/abgeordnetensuche/biografie/?tx_rlpdelegate%5Bcontroller%5D=Delegate&tx_rlpdelegate%5Baction%5D=detail&tx_rlpdelegate_detail%5Bdelegate%5D=8&cHash=3fe2ec9c04ff95990a19a449b8a3de67
+
+Lebenshilfe (o. J.). Bundesvorstand Ulla Schmidt. https://www.lebenshilfe.de/ueber-uns/bundesvorstand/ulla-schmidt/
+
+Linked In. (o. J.). Thomas Ilka. https://www.linkedin.com/in/thomas-ilka-530547156/?originalSubdomain=de
+
+Lobbycontrol. (o. J.). Website von Lobbycontrol. https://www.lobbycontrol.de/
+
+Lobbypedia. (o. J..) Website von Lobbypedia. https://lobbypedia.de/
+
+Lobbypedia. (o. J.). Thomas Ilka. https://lobbypedia.de/wiki/Thomas_ilka
+
+Lobbyradar. (o. J.). Ulla Schmidt.  https://lobbyradar.org/entity/54bd3c7f8b934da063410a84
+
+Lobbyradar. (o. J.). Daniel Bahr. https://lobbyradar.org/entity/552ff9ccaf9ee96e1c1df752
+
+Lobbyradar. (o. J.). Daniel Bahr. https://lobbypedia.de/wiki/Daniel_Bahr
+
+Lobbyradar. (o. J.). Marion Caspers-Merk. https://lobbyradar.org/entity/54bd3c8c8b934da0634124ab
+
+Lobbyradar. (o. J.). Ralf Schwanitz. https://lobbyradar.org/entity/54c2a4bcfe6a42c82bbab440
+
+Lobbyradar. (o. J.). Website von Lobbyradar. https://www.lobbyradar.org/ 
+
+Marlene Mortler. (o. J.). Website von Marlene Mortler. https://marlenemortler.de/ 
+
+Matusiewicz, D. (2018, 01. März). Die Vorgänger von Jens Spahn - und was aus ihnen wurde. Focus Online. https://www.focus.de/finanzen/experten/matusiewicz/gesundheitsministerium-die-vorgaenger-von-jens-spahn-und-was-aus-ihnen-wurde_id_8526129.html
+
+Munzinger Online. (o. J.). Website des Munzinger Archiv. https://www.munzinger.de/search/start.jsp 
+
+Musikverein Edelweiß. (2007). Bericht der Zeitung Main- Echo. Auf neue Herausforderungen eingehen. https://mv-sulzbach.de/auf-neue-herausforderungen-eingehen/
+
+Nau. (2020). Ehemaliger Minister Rösler wird Verwaltungsrat von Cannabis-Firma. https://www.nau.ch/news/wirtschaft/ehemaliger-minister-rosler-wird-verwaltungsrat-von-cannabis-firma-65786856
+
+Patientenbeauftragte. (o. J.). Website der Patientenbeauftragten. https://www.patientenbeauftragte.de/
+
+Pflegebevollmächtigter. (o. J.). Amt und Person. https://www.pflegebevollmaechtigter.de/amt-und-person.html
+
+Preusker, S. (2019, 24. April). Thomas Steffen soll Stroppe-Nachfolger im BMG werden. Medhochzwei. https://www.medhochzwei-verlag.de/News/Details/71405
+
+Rolf Schwanitz. (o. J.). Leben. https://www.rolf-schwanitz.de/leben.html
+ 
+RP Online. (o. J.). Daniel Bahr. https://rp-online.de/thema/daniel-bahr/
+
+Sabine Bätzing-Lichtenthäler. (o. J.). Website von Sabine Bätzing-Lichtenthäler.  https://www.baetzing-lichtenthaeler.de/vita/
+
+Sabine Weiss. (o. J.). Website von Sabine Weiss. https://www.sabine-weiss.de/
+
+SPD (o. J.). Sabine Bätzing-Lichtenthäler. https://www.spdfraktion.de/abgeordnete/baetzing-lichtenthaeler?wp=18
+
+SPIEGEL. (o. J.). Daniel Bahr. https://www.spiegel.de/thema/daniel_bahr/
+
+SPIEGEL. (o. J.). Ulla Schmidt. https://www.spiegel.de/thema/ulla_schmidt/
+
+Thomas Gebhart. (o. J.). Website von Thomas Gebhart. https://thomas-gebhart.de/
+
+TSV Olympia Eisenbach. (o. J.). Chronik. https://www.olympia-eisenbach.de/chronik
+
+TVG 1888. (o. J.). Vorstand. http://www.tvg-1888.de/vorstand.html
+
+Ulla Schmidt. (o. J.). Website von Ulla Schmidt. https://ulla-schmidt.de
+
+Webarchiv. (o. J.). Ulla Schmidt. http://web.archive.org/web/*/ulla%20schmidt
+
+Webarchiv. (o. J.). Widmann-Mauz. http://web.archive.org/web/*/Widmann-mauz
+
+Webarchiv. (o. J.). Daniel Bahr. http://web.archive.org/web/*/daniel%20bahr
+
+Webarchiv. (o. J.). Mechthild Dyckmans. http://web.archive.org/web/*/Mechthild%20Dyckmans
+
+Webarchiv. (o. J.). Marion Caspers-Merk. http://web.archive.org/web/*/Marion%20caspers-merk
+
+Welt (o. J.). Hermann Gröhe. https://www.welt.de/themen/hermann-groehe/
+
+Welt. (o. J.). Ulla Schmidt. https://www.welt.de/themen/ulla-schmidt/
+
+Welt. (o. J.). Mechthild Dyckmans. https://www.welt.de/themen/mechthild-dyckmans/
+
+Welt. (2019). Allianz-Vorstand: Ex-Gesundheitsminister Bahr, 42, an Krebs erkrankt. https://www.welt.de/politik/deutschland/article193253963/Allianz-Vorstand-Ex-Gesundheitsminister-Daniel-Bahr-an-Krebs-erkrankt.html
+
+Widmann-Mauz (o. J.). Website von Annette Widmann-Mauz. https://www.widmann-mauz.de/
+
+Wikipedia. (2020). Kabinett Merkel II. https://de.wikipedia.org/wiki/Kabinett_Merkel_II
+
+Wikipedia. (2020). Kabinett Merkel III. https://de.wikipedia.org/wiki/Kabinett_Merkel_III
+
+Wikipedia. (o. J.). Mechthild Dyckmans. https://de.wikipedia.org/wiki/Mechthild_Dyckmans
+
+Wikipedia. (o. J.). Annette Widmann-Mauz. https://de.wikipedia.org/wiki/Annette_Widmann-Mauz
+
+Wikipedia. (o. J.). Daniel Bahr. https://de.wikipedia.org/wiki/Daniel_Bahr
+
+Wikipedia. (o. J.). Ulla Schmidt. https://de.wikipedia.org/wiki/Ulla_Schmidt_%28Politikerin,_1949%29
+
+Wolfgang Zöller. (o. J.). Persönliches. http://www.wolfgang-zoeller.de/hp8/Persoenliches.html 
+
+## 10.3. Codebuch
+
+[Link auf Github](https://github.com/Netzwerke-Pharma/Datensatz-gesamt/blob/main/Codebuch.md)
+
+*EDGE-Attribute*
+
+from
+(Definiert den Sender. Entspricht ID in der Nodelist. Keine Sonderzeichen, nur ein Wort)
+
+to
+(Definiert den Empfänger. Entspricht ID in der Nodelist. Keine Sonderzeichen, etc.)
+
+relation 
+(Art der Beziehung zu einer Institution)
+1 = Hauptamt
+2 = Nebenamt
+3 = Ehrenamt
+4 = Mitgliedschaft
+5 = einmalige entgeldliche Tätigkeiten
+6 = Sonstiges
+7 = Bundesausschussmitgliedschaft
+8 = Ministeriumszugehörigkeit
+
+duration
+(Dauer der Tätigkeit)
+1 = 0-3 Jahre
+2 = 3-6 Jahre
+3 = 6-9 Jahre
+4 = 9-12 Jahre
+5 = 12-15 Jahre
+6 = mehr als 15 Jahre
+
+status 
+(aktiv)
+1 = Ja
+2 = Nein
+
+health
+(Tätigkeit im Gesundheitssektor(im weitesten Sinne))
+1 = Ja
+2 = Nein
+
+*NODE-Attribute*
+
+id
+(jede ID entspricht einer Institution oder einem Mitglied des Gesundheitsministeriums)
+
+label
+(vollständige Bezeichnung der Knoten)
+
+sex
+(Geschlecht)
+1 = weiblich
+2 = männlich
+3 = divers
+
+type
+(Person oder Organisation)
+1 = Person
+2 = Organisation
+
+type_detail
+(Art der Organisation)
+2 = Unternehmen
+3 = Verein/Organisation
+4 = politische Institution
+5 = Stiftung
+
+age
+(Alter der MitgliederInnen)
+1 = 20-30 Jahre
+2 = 31-40 Jahre
+3 = 41-50 Jahre
+4 = 51-60 Jahre
+5 = 61-70 Jahre
+6 = 71-80 Jahre
+7 = 81-90 Jahre
+8 = tot
+
+birth
+(Geburtsjahr der MitgliederInnen)
+1 = 1930-1940 
+2 = 1941-1950 
+3 = 1951-1960 
+4 = 1961-1970 
+5 = 1971-1980 
+6 = 1981-1990 
+7 = 1991-2000
+
+education
+(höchster Bildungsabschluss)
+1 = Hauptschulabschluss
+2 = Mittlere Reife
+3 = Fachhochschulreife
+4 = Abitur
+5 = Berufsausbildung
+6 = Bachelor
+7 = Master
+8 = Staatsexamen
+9 = Promotion
+
+education_background
+(Kategorie der Berufsausbildung)
+1 = Wirtschaft 
+2 = Politik 
+3 = Medizin 
+4 = Soziales 
+5 = Sonstiges (Jura, Journalismus/ Kommunikation etc.)
+
+background
+(Tätigkeiten im Gesundheitssektor)
+1 = Ja
+2 = Nein
+
+party
+(Parteizugehörigkeit der MitgliederInnen)
+1 = CDU/CSU
+2 = SPD
+3 = DIE LINKE
+4 = DIE GRÜNEN
+5 = FDP
+
+state
+(Verortung nach Bundesländern)
+1 = Baden-Württemberg
+2 = Bayern
+3 = Berlin
+4 = Brandenburg
+5 = Bremen
+6 = Hamburg
+7 = Hessen
+8 = Mecklenburg-Vorpommern
+9 = Niedersachsen
+10 = Nordrhein-Westfahlen 
+11 = Rheinland-Pfalz
+12 = Saarland 
+13 = Sachsen
+14 = Sachsen-Anhalt
+15 = Schleswig-Holstein
+16 = Thüringen
+
+function
+(Funktion im Bundesgesundheitsministerium)
+1 = Bundesgesundheitsminister
+2 = Staatssekretär
+3 = Drogenbeauftragte*r
+4 = Sonstige
+
+health_sector
+(Institution im Gesundheitssektor)
+1 = Ja
+2 = Nein
+
+health_category
+(Geschäftszweige im Gesundheitssektor) 
+1 = Pharmakonzerne 
+2 = Medizintechnikhersteller 
+3 = Krankenhäuser 
+4 = Verband/Stiftung 
+5 = Sonstiges
+
+period
+(Legislaturperiode)
+1 = 2005-2009
+2 = 2009-2013
+3 = 2013-2017
+4 = 2017-2021
+
+99 = Definiert fehlende Werte
+
+## 10.4. Verwendete Datenquellen
+
+[Link auf Github Edgelist](https://github.com/Netzwerke-Pharma/Datensatz-gesamt/blob/main/edgelist_bmg.csv)
+[Link auf Github Nodelist](https://github.com/Netzwerke-Pharma/Datensatz-gesamt/blob/main/nodelist_bmg.csv)
+
+## 10.5. Komplettes annotiertes RNotebook
+
+[Link auf Github RNotebook]()
+
+## 10.6. TeilnehmerInnen des Projekts und Arbeitsaufwand
+
+| Name| Matrikelnummer| Arbeitsaufwand|
+| Julian Hammerstein| 38083| 195 h|
+| Janina Hofmann| 38194| 195 h|
+| Jasmin Maya| 38555| 195 h|
+| Samuel Müller| 38576| 195 h|
+| Verena Nagel| 38298| 195 h|
+| Nora Schwarz| 38516| 195 h|
