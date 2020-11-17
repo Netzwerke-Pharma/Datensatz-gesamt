@@ -175,4 +175,4 @@ period
 3 = 2013-2017
 4 = 2017-2021
 
-99 Definiert fehlende Werte
+99 = Definiert fehlende Werte
